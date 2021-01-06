@@ -9,7 +9,7 @@ char 	*check_the_poit(t_specs *stuff)
 	return (ft_strchr(stuff->f_str, '.'));
 }
 
-int		is_specifier_type`(t_specs *stuff)
+int		is_specifier_type(t_specs *stuff)
 {
 	int			i;
 
@@ -21,8 +21,14 @@ int		is_specifier_type`(t_specs *stuff)
 		i++;		
 	}
 
+	if (*(stuff->f_str) == '%')
+	{
+		stuff->f_str++;
+		return (-1);
+	}
 	return (0);
 }
+
 
 int		specifier_parser(t_specs *stuff)
 {	
@@ -34,11 +40,6 @@ int		specifier_parser(t_specs *stuff)
 		stuff->f_str++;
 	}
 	//printf("%s\n", stuff->f_str);
-	if (*(stuff->f_str + 1) == '\0')
-	{
-		stuff->f_str++;
-		return (-1);
-	}
 	else if (*(stuff->f_str + 1) == '%')
 	{
 		ft_putchar_fd('%', 1);
