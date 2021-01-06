@@ -15,14 +15,14 @@ typedef enum 		e_flags
 
 typedef struct		s_specs
 {
-	char			specifier_types[9];
-	t_flags			flags;
+	char			*specifier_types;
+	t_flags			flag;
 	int				width;
 	int				precision;
 	char			type;
 	va_list			f_varg;
 	const char 		*f_str;
-	int				point;
+	char 			*point;
 	unsigned int 	lenth;
 } 					t_specs;
 

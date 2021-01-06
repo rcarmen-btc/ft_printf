@@ -224,6 +224,33 @@ ft_putstr_fd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putstr_fd.c.s
 .PHONY : ft_putstr_fd.c.s
 
+ft_strchr.o: ft_strchr.c.o
+
+.PHONY : ft_strchr.o
+
+# target to build an object file
+ft_strchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strchr.c.o
+.PHONY : ft_strchr.c.o
+
+ft_strchr.i: ft_strchr.c.i
+
+.PHONY : ft_strchr.i
+
+# target to preprocess a source file
+ft_strchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strchr.c.i
+.PHONY : ft_strchr.c.i
+
+ft_strchr.s: ft_strchr.c.s
+
+.PHONY : ft_strchr.s
+
+# target to generate assembly for a file
+ft_strchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strchr.c.s
+.PHONY : ft_strchr.c.s
+
 ft_strlen.o: ft_strlen.c.o
 
 .PHONY : ft_strlen.o
@@ -323,6 +350,9 @@ help:
 	@echo "... ft_putstr_fd.o"
 	@echo "... ft_putstr_fd.i"
 	@echo "... ft_putstr_fd.s"
+	@echo "... ft_strchr.o"
+	@echo "... ft_strchr.i"
+	@echo "... ft_strchr.s"
 	@echo "... ft_strlen.o"
 	@echo "... ft_strlen.i"
 	@echo "... ft_strlen.s"

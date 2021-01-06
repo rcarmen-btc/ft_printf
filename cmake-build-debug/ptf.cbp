@@ -90,6 +90,9 @@
 		<Unit filename="/home/rcarmen/school42/ptf/ft_putstr_fd.c">
 			<Option target="ptf"/>
 		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/ft_strchr.c">
+			<Option target="ptf"/>
+		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/ft_strlen.c">
 			<Option target="ptf"/>
 		</Unit>

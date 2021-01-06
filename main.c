@@ -6,6 +6,6 @@
 
 int main()
 {
-	ft_printf("4343%%\n");
+	ft_printf("4343%c");
 	return (0);
 }

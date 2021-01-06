@@ -13,4 +13,5 @@ add_executable(ptf
         ft_strlen.c
         libft.h
         main.c
-        specifier_parser.c)
+        specifier_parser.c
+        ft_strchr.c)

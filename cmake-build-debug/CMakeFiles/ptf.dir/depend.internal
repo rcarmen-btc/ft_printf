@@ -11,6 +11,9 @@ CMakeFiles/ptf.dir/ft_putchar_fd.c.o
 CMakeFiles/ptf.dir/ft_putstr_fd.c.o
  /home/rcarmen/school42/ptf/ft_putstr_fd.c
  /home/rcarmen/school42/ptf/libft.h
+CMakeFiles/ptf.dir/ft_strchr.c.o
+ /home/rcarmen/school42/ptf/ft_strchr.c
+ /home/rcarmen/school42/ptf/libft.h
 CMakeFiles/ptf.dir/ft_strlen.c.o
  /home/rcarmen/school42/ptf/ft_strlen.c
  /home/rcarmen/school42/ptf/libft.h

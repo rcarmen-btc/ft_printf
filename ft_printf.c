@@ -13,16 +13,6 @@
 #include "ft_printf.h"
 #include "libft.h"
 
-int 	get_specifier_arr(t_specs *stuff, char *specifier_types)
-{
-	int i;
-
-	i = 0;
-	while (*specifier_types)
-		stuff->specifier_types[i++] = *specifier_types++;
-	return (0);
-}
-
 int 	ft_printf(const char *f_str, ...)
 {
 	t_specs		*stuff;
@@ -33,9 +23,6 @@ int 	ft_printf(const char *f_str, ...)
 
 	va_start(stuff->f_varg, f_str);
 	stuff->f_str = f_str;
-	
-	get_specifier_arr(stuff, "cspdiuxX%");
-
 	while (*(stuff->f_str))
 	{
 		while (*(stuff->f_str) && *(stuff->f_str) != '%')

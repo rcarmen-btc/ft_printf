@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/rcarmen/school42/ptf/ft_printf.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_printf.c.o"
   "/home/rcarmen/school42/ptf/ft_putchar_fd.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_putchar_fd.c.o"
   "/home/rcarmen/school42/ptf/ft_putstr_fd.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_putstr_fd.c.o"
+  "/home/rcarmen/school42/ptf/ft_strchr.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_strchr.c.o"
   "/home/rcarmen/school42/ptf/ft_strlen.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_strlen.c.o"
   "/home/rcarmen/school42/ptf/main.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/main.c.o"
   "/home/rcarmen/school42/ptf/specifier_parser.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/specifier_parser.c.o"

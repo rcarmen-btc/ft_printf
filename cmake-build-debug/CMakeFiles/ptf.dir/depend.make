@@ -11,6 +11,9 @@ CMakeFiles/ptf.dir/ft_putchar_fd.c.o: ../libft.h
 CMakeFiles/ptf.dir/ft_putstr_fd.c.o: ../ft_putstr_fd.c
 CMakeFiles/ptf.dir/ft_putstr_fd.c.o: ../libft.h
 
+CMakeFiles/ptf.dir/ft_strchr.c.o: ../ft_strchr.c
+CMakeFiles/ptf.dir/ft_strchr.c.o: ../libft.h
+
 CMakeFiles/ptf.dir/ft_strlen.c.o: ../ft_strlen.c
 CMakeFiles/ptf.dir/ft_strlen.c.o: ../libft.h
 
