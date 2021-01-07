@@ -14,4 +14,5 @@ add_executable(ptf
         libft.h
         main.c
         specifier_parser.c
-        ft_strchr.c)
+        ft_strchr.c
+        ft_isdigit.c)

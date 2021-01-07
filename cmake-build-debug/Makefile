@@ -143,6 +143,33 @@ ptf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/build
 .PHONY : ptf/fast
 
+ft_isdigit.o: ft_isdigit.c.o
+
+.PHONY : ft_isdigit.o
+
+# target to build an object file
+ft_isdigit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_isdigit.c.o
+.PHONY : ft_isdigit.c.o
+
+ft_isdigit.i: ft_isdigit.c.i
+
+.PHONY : ft_isdigit.i
+
+# target to preprocess a source file
+ft_isdigit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_isdigit.c.i
+.PHONY : ft_isdigit.c.i
+
+ft_isdigit.s: ft_isdigit.c.s
+
+.PHONY : ft_isdigit.s
+
+# target to generate assembly for a file
+ft_isdigit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_isdigit.c.s
+.PHONY : ft_isdigit.c.s
+
 ft_printf.o: ft_printf.c.o
 
 .PHONY : ft_printf.o
@@ -341,6 +368,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ptf"
+	@echo "... ft_isdigit.o"
+	@echo "... ft_isdigit.i"
+	@echo "... ft_isdigit.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
