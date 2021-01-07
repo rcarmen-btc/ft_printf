@@ -4,12 +4,12 @@
 #include "libft.h"
 #include "ft_printf.h"
 
-char 	*point_detecter(t_specs *stuff)
+char 	*point_detector(t_specs *stuff)
 {
 	return (ft_strchr(stuff->f_str, '.'));
 }
 
-void	flag_detecter(t_specs *stuff)
+void	flag_detector(t_specs *stuff)
 {
 	stuff->flag = none;
 
@@ -25,46 +25,50 @@ void	flag_detecter(t_specs *stuff)
 	}
 }
 
-void	width_detecter(t_specs *stuff)
+void	width_detector(t_specs *stuff)
 {
-	int res;
-
-	res = 0;
 	if (stuff->point != NULL)
+	{
 		while (*(stuff->f_str) != '.')
 		{
 			if (*(stuff->f_str) == '*')
 			{
 				stuff->stars_status |= first_star;
+				stuff->width = va_arg(stuff->f_varg, int);
 				stuff->f_str++;
-				return ;
-			}
-			res = (res * 10) + (*(stuff->f_str++) - '0');
+			} else
+				stuff->width = (stuff->width * 10) + (*(stuff->f_str++) - '0');
 		}
-	else
-		while (ft_isdigit(*(stuff->f_str)))
-			res = (res * 10) + (*(stuff->f_str++) - '0');
-	if (*(stuff->f_str) == '.')
 		stuff->f_str++;
-	stuff->width = res;
+	}
+	else
+	{
+		while (ft_isdigit(*(stuff->f_str)))
+			stuff->width = (stuff->width * 10) + (*(stuff->f_str++) - '0');
+		if (*(stuff->f_str) == '*')
+		{
+			stuff->stars_status |= first_star;
+			stuff->width = va_arg(stuff->f_varg, int);
+			stuff->f_str++;
+		}
+	}
 }
 
-void		precision_detecter(t_specs *stuff)
+void		precision_detector(t_specs *stuff)
 {
 	int res;
 
 	res = 0;
 	while (ft_isdigit(*(stuff->f_str)))
-		if (*(stuff->f_str) == '*')
-		{
-			stuff->stars_status |= second_star;
-			stuff->f_str++;
-			return ;
-		}
-	res = (res * 10) + (*(stuff->f_str++) - '0');
-	stuff->precision = res;
+			stuff->precision = (stuff->precision * 10) + (*(stuff->f_str++) - '0');
+	if (*(stuff->f_str) == '*')
+	{
+		stuff->stars_status |= second_star;
+		stuff->precision2 = va_arg(stuff->f_varg, int);
+		stuff->f_str++;
+	}
 }
-		int		is_specifier_type(t_specs *stuff)
+int		is_specifier_type(t_specs *stuff)
 {
 	int			i;
 
@@ -91,16 +95,16 @@ int		specifier_parser(t_specs *stuff)
 	stuff->f_str++;
 	stuff->specifier_types = "cspdiuxX%";
 	stuff->stars_status = no_stars;
-	stuff->point = point_detecter(stuff);
+	stuff->point = point_detector(stuff);
 
 	while (*(stuff->f_str) && (is_sp_type_return = is_specifier_type(stuff)))
 	{
 		if (is_sp_type_return == -1)
 			break ;
-		flag_detecter(stuff);
-		width_detecter(stuff);
+		flag_detector(stuff);
+		width_detector(stuff);
 		if (stuff->point != NULL)
-			precision_detecter(stuff);
+			precision_detector(stuff);
 		else
 			stuff->precision = 0;
 	}
@@ -117,5 +121,6 @@ int		specifier_parser(t_specs *stuff)
 	printf("point: %d\n", stuff->point != none);
 	printf("precision: %d\n", stuff->precision);
 	printf("type: %c\n", stuff->type);
+	printf("stars: %d\n", stuff->stars_status);
 	return (0);
 }
