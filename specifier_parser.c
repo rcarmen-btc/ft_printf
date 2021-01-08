@@ -32,7 +32,6 @@ void	width_detector(t_specs *stuff)
 		stuff->width = va_arg(stuff->f_varg, int);
 		stuff->f_str++;
 	}
-	//}
 }
 
 void		precision_detector(t_specs *stuff)
@@ -93,11 +92,5 @@ int		specifier_parser(t_specs *stuff)
 		stuff->f_str++;
 	}
 	print_specifier(stuff);
-	printf("-----------------\n");
-	printf("flag: %d\n", stuff->flag);
-	printf("width: %d\n", stuff->width);
-	printf("point: %d\n", stuff->point != none);
-	printf("precision: %d\n", stuff->precision);
-	printf("type: %c\n", stuff->type);
 	return (0);
 }
