@@ -24,6 +24,10 @@ CMakeFiles/ptf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/ptf.dir/main.c.o: ../libft.h
 CMakeFiles/ptf.dir/main.c.o: ../main.c
 
+CMakeFiles/ptf.dir/print_specifier.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/print_specifier.c.o: ../libft.h
+CMakeFiles/ptf.dir/print_specifier.c.o: ../print_specifier.c
+
 CMakeFiles/ptf.dir/specifier_parser.c.o: ../ft_printf.h
 CMakeFiles/ptf.dir/specifier_parser.c.o: ../libft.h
 CMakeFiles/ptf.dir/specifier_parser.c.o: ../specifier_parser.c

@@ -143,6 +143,33 @@ ptf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/build
 .PHONY : ptf/fast
 
+dig_int_print.o: dig_int_print.c.o
+
+.PHONY : dig_int_print.o
+
+# target to build an object file
+dig_int_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/dig_int_print.c.o
+.PHONY : dig_int_print.c.o
+
+dig_int_print.i: dig_int_print.c.i
+
+.PHONY : dig_int_print.i
+
+# target to preprocess a source file
+dig_int_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/dig_int_print.c.i
+.PHONY : dig_int_print.c.i
+
+dig_int_print.s: dig_int_print.c.s
+
+.PHONY : dig_int_print.s
+
+# target to generate assembly for a file
+dig_int_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/dig_int_print.c.s
+.PHONY : dig_int_print.c.s
+
 ft_isdigit.o: ft_isdigit.c.o
 
 .PHONY : ft_isdigit.o
@@ -332,6 +359,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/main.c.s
 .PHONY : main.c.s
 
+print_specifier.o: print_specifier.c.o
+
+.PHONY : print_specifier.o
+
+# target to build an object file
+print_specifier.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/print_specifier.c.o
+.PHONY : print_specifier.c.o
+
+print_specifier.i: print_specifier.c.i
+
+.PHONY : print_specifier.i
+
+# target to preprocess a source file
+print_specifier.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/print_specifier.c.i
+.PHONY : print_specifier.c.i
+
+print_specifier.s: print_specifier.c.s
+
+.PHONY : print_specifier.s
+
+# target to generate assembly for a file
+print_specifier.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/print_specifier.c.s
+.PHONY : print_specifier.c.s
+
 specifier_parser.o: specifier_parser.c.o
 
 .PHONY : specifier_parser.o
@@ -368,6 +422,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ptf"
+	@echo "... dig_int_print.o"
+	@echo "... dig_int_print.i"
+	@echo "... dig_int_print.s"
 	@echo "... ft_isdigit.o"
 	@echo "... ft_isdigit.i"
 	@echo "... ft_isdigit.s"
@@ -389,6 +446,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print_specifier.o"
+	@echo "... print_specifier.i"
+	@echo "... print_specifier.s"
 	@echo "... specifier_parser.o"
 	@echo "... specifier_parser.i"
 	@echo "... specifier_parser.s"

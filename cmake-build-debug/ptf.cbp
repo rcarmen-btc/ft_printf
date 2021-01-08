@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/rcarmen/school42/ptf/dig_int_print.c">
+			<Option target="ptf"/>
+		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/ft_isdigit.c">
 			<Option target="ptf"/>
 		</Unit>
@@ -103,6 +106,9 @@
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/main.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/print_specifier.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/specifier_parser.c">

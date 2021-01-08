@@ -15,4 +15,6 @@ add_executable(ptf
         main.c
         specifier_parser.c
         ft_strchr.c
-        ft_isdigit.c)
+        ft_isdigit.c
+        print_specifier.c
+        dig_int_print.c)

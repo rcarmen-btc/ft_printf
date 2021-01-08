@@ -24,6 +24,10 @@ CMakeFiles/ptf.dir/main.c.o
  /home/rcarmen/school42/ptf/ft_printf.h
  /home/rcarmen/school42/ptf/libft.h
  /home/rcarmen/school42/ptf/main.c
+CMakeFiles/ptf.dir/print_specifier.c.o
+ /home/rcarmen/school42/ptf/ft_printf.h
+ /home/rcarmen/school42/ptf/libft.h
+ /home/rcarmen/school42/ptf/print_specifier.c
 CMakeFiles/ptf.dir/specifier_parser.c.o
  /home/rcarmen/school42/ptf/ft_printf.h
  /home/rcarmen/school42/ptf/libft.h
