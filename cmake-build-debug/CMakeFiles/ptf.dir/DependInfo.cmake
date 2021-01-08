@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/rcarmen/school42/ptf/dig_int_print.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/dig_int_print.c.o"
   "/home/rcarmen/school42/ptf/ft_isdigit.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_isdigit.c.o"
+  "/home/rcarmen/school42/ptf/ft_itoa.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_itoa.c.o"
   "/home/rcarmen/school42/ptf/ft_printf.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_printf.c.o"
   "/home/rcarmen/school42/ptf/ft_putchar_fd.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_putchar_fd.c.o"
   "/home/rcarmen/school42/ptf/ft_putstr_fd.c" "/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles/ptf.dir/ft_putstr_fd.c.o"

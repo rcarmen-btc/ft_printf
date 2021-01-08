@@ -46,6 +46,6 @@ void		specifier_parser(t_specs *stuff);
 void		char_print(t_specs *stuff);
 void		str_print(t_specs *stuff);
 void		hex_print(t_specs *stuff);
-void 		upper_hex_print(t_specs *stuff)
+void 		upper_hex_print(t_specs *stuff);
 
 #endif
