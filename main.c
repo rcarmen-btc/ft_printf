@@ -6,21 +6,14 @@
 
 int main()
 {
-	ft_printf("1: 4343%-*.*c", 9, 1);
-	ft_printf("\n");
-//	ft_printf("2: 4343%322.32d");
+	ft_printf("4: %-3.2dHello%s\n");
+//	ft_printf("5: %5");
 //	ft_printf("\n");
-//	ft_printf("3: 4343%.32d");
+//	ft_printf("6: %-5");
 //	ft_printf("\n");
-//	ft_printf("4: 4343%322d");
+//	ft_printf("7: %05");
 //	ft_printf("\n");
-//	ft_printf("5: 4343%d");
-//	ft_printf("\n");
-//	ft_printf("6: 4343%03d");
-//	ft_printf("\n");
-//	ft_printf("7: 4343%-3d");
-//	ft_printf("\n");
-//	ft_printf("8: 4343%03%dodddf");
+//	ft_printf("8: %-05");
 //	ft_printf("\n");
 //	ft_printf("8: 4343%03d");
 //	ft_printf("\n");
