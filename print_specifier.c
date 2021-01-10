@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/08 15:18:56 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/09 00:12:42 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 
 int			print_specifier(t_specs *stuff)
 {
-	printf("-----------------\n");
-	printf("flag: %d\n", stuff->flag);
-	printf("width: %d\n", stuff->width);
-	printf("point: %d\n", stuff->point != none);
-	printf("precision: %d\n", stuff->precision);
-	printf("type: %d\n", stuff->type);
+	//printf("-----------------\n");
+	//printf("flag: %d\n", stuff->flag);
+	//printf("width: %d\n", stuff->width);
+	//printf("point: %d\n", stuff->point != none);
+	//printf("precision: %d\n", stuff->precision);
+	//printf("type: %d\n", stuff->type);
 	if (stuff->type == digit || stuff->type == integer)
 		dig_int_print(stuff);
 	else if (stuff->type == character)

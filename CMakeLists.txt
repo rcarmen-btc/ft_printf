@@ -18,4 +18,8 @@ add_executable(ptf
         ft_isdigit.c
         print_specifier.c
         dig_int_print.c
-        ft_itoa.c)
+        ft_itoa.c
+        char_print.c
+        hex_print.c
+        str_print.c
+        upper_hex_print.c)

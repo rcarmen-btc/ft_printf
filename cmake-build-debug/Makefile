@@ -143,6 +143,33 @@ ptf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/build
 .PHONY : ptf/fast
 
+char_print.o: char_print.c.o
+
+.PHONY : char_print.o
+
+# target to build an object file
+char_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/char_print.c.o
+.PHONY : char_print.c.o
+
+char_print.i: char_print.c.i
+
+.PHONY : char_print.i
+
+# target to preprocess a source file
+char_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/char_print.c.i
+.PHONY : char_print.c.i
+
+char_print.s: char_print.c.s
+
+.PHONY : char_print.s
+
+# target to generate assembly for a file
+char_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/char_print.c.s
+.PHONY : char_print.c.s
+
 dig_int_print.o: dig_int_print.c.o
 
 .PHONY : dig_int_print.o
@@ -359,6 +386,33 @@ ft_strlen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strlen.c.s
 .PHONY : ft_strlen.c.s
 
+hex_print.o: hex_print.c.o
+
+.PHONY : hex_print.o
+
+# target to build an object file
+hex_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/hex_print.c.o
+.PHONY : hex_print.c.o
+
+hex_print.i: hex_print.c.i
+
+.PHONY : hex_print.i
+
+# target to preprocess a source file
+hex_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/hex_print.c.i
+.PHONY : hex_print.c.i
+
+hex_print.s: hex_print.c.s
+
+.PHONY : hex_print.s
+
+# target to generate assembly for a file
+hex_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/hex_print.c.s
+.PHONY : hex_print.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -440,6 +494,60 @@ specifier_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/specifier_parser.c.s
 .PHONY : specifier_parser.c.s
 
+str_print.o: str_print.c.o
+
+.PHONY : str_print.o
+
+# target to build an object file
+str_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/str_print.c.o
+.PHONY : str_print.c.o
+
+str_print.i: str_print.c.i
+
+.PHONY : str_print.i
+
+# target to preprocess a source file
+str_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/str_print.c.i
+.PHONY : str_print.c.i
+
+str_print.s: str_print.c.s
+
+.PHONY : str_print.s
+
+# target to generate assembly for a file
+str_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/str_print.c.s
+.PHONY : str_print.c.s
+
+upper_hex_print.o: upper_hex_print.c.o
+
+.PHONY : upper_hex_print.o
+
+# target to build an object file
+upper_hex_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/upper_hex_print.c.o
+.PHONY : upper_hex_print.c.o
+
+upper_hex_print.i: upper_hex_print.c.i
+
+.PHONY : upper_hex_print.i
+
+# target to preprocess a source file
+upper_hex_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/upper_hex_print.c.i
+.PHONY : upper_hex_print.c.i
+
+upper_hex_print.s: upper_hex_print.c.s
+
+.PHONY : upper_hex_print.s
+
+# target to generate assembly for a file
+upper_hex_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/upper_hex_print.c.s
+.PHONY : upper_hex_print.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -449,6 +557,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ptf"
+	@echo "... char_print.o"
+	@echo "... char_print.i"
+	@echo "... char_print.s"
 	@echo "... dig_int_print.o"
 	@echo "... dig_int_print.i"
 	@echo "... dig_int_print.s"
@@ -473,6 +584,9 @@ help:
 	@echo "... ft_strlen.o"
 	@echo "... ft_strlen.i"
 	@echo "... ft_strlen.s"
+	@echo "... hex_print.o"
+	@echo "... hex_print.i"
+	@echo "... hex_print.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -482,6 +596,12 @@ help:
 	@echo "... specifier_parser.o"
 	@echo "... specifier_parser.i"
 	@echo "... specifier_parser.s"
+	@echo "... str_print.o"
+	@echo "... str_print.i"
+	@echo "... str_print.s"
+	@echo "... upper_hex_print.o"
+	@echo "... upper_hex_print.i"
+	@echo "... upper_hex_print.s"
 .PHONY : help
 
 

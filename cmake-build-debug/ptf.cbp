@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/rcarmen/school42/ptf/char_print.c">
+			<Option target="ptf"/>
+		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/dig_int_print.c">
 			<Option target="ptf"/>
 		</Unit>
@@ -105,6 +108,9 @@
 		<Unit filename="/home/rcarmen/school42/ptf/ft_strlen.c">
 			<Option target="ptf"/>
 		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/hex_print.c">
+			<Option target="ptf"/>
+		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/libft.h">
 			<Option target="ptf"/>
 		</Unit>
@@ -115,6 +121,12 @@
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/specifier_parser.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/str_print.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/upper_hex_print.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/CMakeLists.txt">

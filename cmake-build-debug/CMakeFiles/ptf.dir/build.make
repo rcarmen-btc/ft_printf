@@ -220,6 +220,58 @@ CMakeFiles/ptf.dir/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_itoa.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_itoa.c -o CMakeFiles/ptf.dir/ft_itoa.c.s
 
+CMakeFiles/ptf.dir/char_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/char_print.c.o: ../char_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ptf.dir/char_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/char_print.c.o   -c /home/rcarmen/school42/ptf/char_print.c
+
+CMakeFiles/ptf.dir/char_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/char_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/char_print.c > CMakeFiles/ptf.dir/char_print.c.i
+
+CMakeFiles/ptf.dir/char_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/char_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/char_print.c -o CMakeFiles/ptf.dir/char_print.c.s
+
+CMakeFiles/ptf.dir/hex_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/hex_print.c.o: ../hex_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ptf.dir/hex_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/hex_print.c.o   -c /home/rcarmen/school42/ptf/hex_print.c
+
+CMakeFiles/ptf.dir/hex_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/hex_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/hex_print.c > CMakeFiles/ptf.dir/hex_print.c.i
+
+CMakeFiles/ptf.dir/hex_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/hex_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/hex_print.c -o CMakeFiles/ptf.dir/hex_print.c.s
+
+CMakeFiles/ptf.dir/str_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/str_print.c.o: ../str_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ptf.dir/str_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/str_print.c.o   -c /home/rcarmen/school42/ptf/str_print.c
+
+CMakeFiles/ptf.dir/str_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/str_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/str_print.c > CMakeFiles/ptf.dir/str_print.c.i
+
+CMakeFiles/ptf.dir/str_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/str_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/str_print.c -o CMakeFiles/ptf.dir/str_print.c.s
+
+CMakeFiles/ptf.dir/upper_hex_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/upper_hex_print.c.o: ../upper_hex_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ptf.dir/upper_hex_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/upper_hex_print.c.o   -c /home/rcarmen/school42/ptf/upper_hex_print.c
+
+CMakeFiles/ptf.dir/upper_hex_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/upper_hex_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/upper_hex_print.c > CMakeFiles/ptf.dir/upper_hex_print.c.i
+
+CMakeFiles/ptf.dir/upper_hex_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/upper_hex_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/upper_hex_print.c -o CMakeFiles/ptf.dir/upper_hex_print.c.s
+
 # Object files for target ptf
 ptf_OBJECTS = \
 "CMakeFiles/ptf.dir/ft_printf.c.o" \
@@ -232,7 +284,11 @@ ptf_OBJECTS = \
 "CMakeFiles/ptf.dir/ft_isdigit.c.o" \
 "CMakeFiles/ptf.dir/print_specifier.c.o" \
 "CMakeFiles/ptf.dir/dig_int_print.c.o" \
-"CMakeFiles/ptf.dir/ft_itoa.c.o"
+"CMakeFiles/ptf.dir/ft_itoa.c.o" \
+"CMakeFiles/ptf.dir/char_print.c.o" \
+"CMakeFiles/ptf.dir/hex_print.c.o" \
+"CMakeFiles/ptf.dir/str_print.c.o" \
+"CMakeFiles/ptf.dir/upper_hex_print.c.o"
 
 # External object files for target ptf
 ptf_EXTERNAL_OBJECTS =
@@ -248,9 +304,13 @@ ptf: CMakeFiles/ptf.dir/ft_isdigit.c.o
 ptf: CMakeFiles/ptf.dir/print_specifier.c.o
 ptf: CMakeFiles/ptf.dir/dig_int_print.c.o
 ptf: CMakeFiles/ptf.dir/ft_itoa.c.o
+ptf: CMakeFiles/ptf.dir/char_print.c.o
+ptf: CMakeFiles/ptf.dir/hex_print.c.o
+ptf: CMakeFiles/ptf.dir/str_print.c.o
+ptf: CMakeFiles/ptf.dir/upper_hex_print.c.o
 ptf: CMakeFiles/ptf.dir/build.make
 ptf: CMakeFiles/ptf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable ptf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable ptf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ptf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
