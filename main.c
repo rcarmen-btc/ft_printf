@@ -6,7 +6,7 @@
 
 int main()
 {
-	ft_printf("%-0-0-0", -3);
+	ft_printf("%3.4d", -123);
 //	ft_printf("5: %5");
 //	ft_printf("\n");
 //	ft_printf("6: %-5");
