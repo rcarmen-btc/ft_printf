@@ -6,10 +6,10 @@
 
 int main()
 {
-	ft_printf("%3.4d", -123);
-//	ft_printf("5: %5");
-//	ft_printf("\n");
-//	ft_printf("6: %-5");
+	//ft_printf("1|Hello, world\n");
+	//ft_printf("");
+	//ft_printf("\n");
+	ft_printf("%--0006.4d", 0);
 //	ft_printf("\n");
 //	ft_printf("7: %05");
 //	ft_printf("\n");

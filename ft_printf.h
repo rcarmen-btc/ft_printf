@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-# define MAIN_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 #include <stdio.h>
 # include <stdlib.h>
 # include <stdarg.h>
@@ -28,7 +28,6 @@ typedef enum 		e_flags
 
 typedef struct		s_specs
 {
-	char			*specifier_types;
 	t_flags			flag;
 	int				width;
 	int				precision;
@@ -36,11 +35,12 @@ typedef struct		s_specs
 	va_list			f_varg;
 	const char 		*f_str;
 	char 			*point;
-	unsigned int 	lenth;
+	unsigned int 	full_lenth;
 } 					t_specs;
 
 int			ft_printf(const char *s, ...);
-void		dig_int_print(t_specs *stuff);
+//void		dig_int_print(t_specs *stuff);
+void		di_print(t_specs *buff);
 int			print_specifier(t_specs *stuff);
 void		specifier_parser(t_specs *stuff);
 void		char_print(t_specs *stuff);

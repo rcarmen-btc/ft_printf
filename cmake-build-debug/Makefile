@@ -170,32 +170,32 @@ char_print.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/char_print.c.s
 .PHONY : char_print.c.s
 
-dig_int_print.o: dig_int_print.c.o
+di_print.o: di_print.c.o
 
-.PHONY : dig_int_print.o
+.PHONY : di_print.o
 
 # target to build an object file
-dig_int_print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/dig_int_print.c.o
-.PHONY : dig_int_print.c.o
+di_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/di_print.c.o
+.PHONY : di_print.c.o
 
-dig_int_print.i: dig_int_print.c.i
+di_print.i: di_print.c.i
 
-.PHONY : dig_int_print.i
+.PHONY : di_print.i
 
 # target to preprocess a source file
-dig_int_print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/dig_int_print.c.i
-.PHONY : dig_int_print.c.i
+di_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/di_print.c.i
+.PHONY : di_print.c.i
 
-dig_int_print.s: dig_int_print.c.s
+di_print.s: di_print.c.s
 
-.PHONY : dig_int_print.s
+.PHONY : di_print.s
 
 # target to generate assembly for a file
-dig_int_print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/dig_int_print.c.s
-.PHONY : dig_int_print.c.s
+di_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/di_print.c.s
+.PHONY : di_print.c.s
 
 ft_isdigit.o: ft_isdigit.c.o
 
@@ -304,6 +304,33 @@ ft_putchar_fd.s: ft_putchar_fd.c.s
 ft_putchar_fd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putchar_fd.c.s
 .PHONY : ft_putchar_fd.c.s
+
+ft_putnbr_fd.o: ft_putnbr_fd.c.o
+
+.PHONY : ft_putnbr_fd.o
+
+# target to build an object file
+ft_putnbr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putnbr_fd.c.o
+.PHONY : ft_putnbr_fd.c.o
+
+ft_putnbr_fd.i: ft_putnbr_fd.c.i
+
+.PHONY : ft_putnbr_fd.i
+
+# target to preprocess a source file
+ft_putnbr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putnbr_fd.c.i
+.PHONY : ft_putnbr_fd.c.i
+
+ft_putnbr_fd.s: ft_putnbr_fd.c.s
+
+.PHONY : ft_putnbr_fd.s
+
+# target to generate assembly for a file
+ft_putnbr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putnbr_fd.c.s
+.PHONY : ft_putnbr_fd.c.s
 
 ft_putstr_fd.o: ft_putstr_fd.c.o
 
@@ -560,9 +587,9 @@ help:
 	@echo "... char_print.o"
 	@echo "... char_print.i"
 	@echo "... char_print.s"
-	@echo "... dig_int_print.o"
-	@echo "... dig_int_print.i"
-	@echo "... dig_int_print.s"
+	@echo "... di_print.o"
+	@echo "... di_print.i"
+	@echo "... di_print.s"
 	@echo "... ft_isdigit.o"
 	@echo "... ft_isdigit.i"
 	@echo "... ft_isdigit.s"
@@ -575,6 +602,9 @@ help:
 	@echo "... ft_putchar_fd.o"
 	@echo "... ft_putchar_fd.i"
 	@echo "... ft_putchar_fd.s"
+	@echo "... ft_putnbr_fd.o"
+	@echo "... ft_putnbr_fd.i"
+	@echo "... ft_putnbr_fd.s"
 	@echo "... ft_putstr_fd.o"
 	@echo "... ft_putstr_fd.i"
 	@echo "... ft_putstr_fd.s"

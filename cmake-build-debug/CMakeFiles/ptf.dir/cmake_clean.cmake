@@ -1,10 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ptf.dir/char_print.c.o"
-  "CMakeFiles/ptf.dir/dig_int_print.c.o"
+  "CMakeFiles/ptf.dir/di_print.c.o"
   "CMakeFiles/ptf.dir/ft_isdigit.c.o"
   "CMakeFiles/ptf.dir/ft_itoa.c.o"
   "CMakeFiles/ptf.dir/ft_printf.c.o"
   "CMakeFiles/ptf.dir/ft_putchar_fd.c.o"
+  "CMakeFiles/ptf.dir/ft_putnbr_fd.c.o"
   "CMakeFiles/ptf.dir/ft_putstr_fd.c.o"
   "CMakeFiles/ptf.dir/ft_strchr.c.o"
   "CMakeFiles/ptf.dir/ft_strlen.c.o"

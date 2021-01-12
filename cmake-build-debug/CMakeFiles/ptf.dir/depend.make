@@ -5,9 +5,9 @@ CMakeFiles/ptf.dir/char_print.c.o: ../char_print.c
 CMakeFiles/ptf.dir/char_print.c.o: ../ft_printf.h
 CMakeFiles/ptf.dir/char_print.c.o: ../libft.h
 
-CMakeFiles/ptf.dir/dig_int_print.c.o: ../dig_int_print.c
-CMakeFiles/ptf.dir/dig_int_print.c.o: ../ft_printf.h
-CMakeFiles/ptf.dir/dig_int_print.c.o: ../libft.h
+CMakeFiles/ptf.dir/di_print.c.o: ../di_print.c
+CMakeFiles/ptf.dir/di_print.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/di_print.c.o: ../libft.h
 
 CMakeFiles/ptf.dir/ft_isdigit.c.o: ../ft_isdigit.c
 CMakeFiles/ptf.dir/ft_isdigit.c.o: ../libft.h
@@ -21,6 +21,9 @@ CMakeFiles/ptf.dir/ft_printf.c.o: ../libft.h
 
 CMakeFiles/ptf.dir/ft_putchar_fd.c.o: ../ft_putchar_fd.c
 CMakeFiles/ptf.dir/ft_putchar_fd.c.o: ../libft.h
+
+CMakeFiles/ptf.dir/ft_putnbr_fd.c.o: ../ft_putnbr_fd.c
+CMakeFiles/ptf.dir/ft_putnbr_fd.c.o: ../libft.h
 
 CMakeFiles/ptf.dir/ft_putstr_fd.c.o: ../ft_putstr_fd.c
 CMakeFiles/ptf.dir/ft_putstr_fd.c.o: ../libft.h

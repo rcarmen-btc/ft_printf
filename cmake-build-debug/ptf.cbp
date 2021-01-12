@@ -81,7 +81,7 @@
 		<Unit filename="/home/rcarmen/school42/ptf/char_print.c">
 			<Option target="ptf"/>
 		</Unit>
-		<Unit filename="/home/rcarmen/school42/ptf/dig_int_print.c">
+		<Unit filename="/home/rcarmen/school42/ptf/di_print.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/ft_isdigit.c">
@@ -97,6 +97,9 @@
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/ft_putchar_fd.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/ft_putnbr_fd.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/ft_putstr_fd.c">
