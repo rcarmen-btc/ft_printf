@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 14:19:56 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/13 21:14:51 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,16 +66,16 @@ static void 	flag_minus_influence(t_specs *stuff, int	nbr, int nbr_len, int diff
 	if (stuff->flag == minus || stuff->flag == (minus | zero))
 	{
 		if (nbr < 0)
-			ft_putchar_fd('-', 1);
+			set_lenth_put_char(stuff, '-', 1);
 		while (i++ < diff)
-			ft_putchar_fd('0', 1);
+			set_lenth_put_char(stuff, '0', 1);
 		ft_ptf_putnbr_fd(nbr, 1);
 		if (nbr < 0)
 			while (--stuff->width > nbr_len + diff)
-				ft_putchar_fd(' ', 1);
+				set_lenth_put_char(stuff, ' ', 1);
 		else
 			while (stuff->width-- > nbr_len + diff)
-				ft_putchar_fd(' ', 1);
+				set_lenth_put_char(stuff, ' ', 1);
 	}
 	else
 		flag_zero_and_none_influence(stuff, nbr, nbr_len, diff);
