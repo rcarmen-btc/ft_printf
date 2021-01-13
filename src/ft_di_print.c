@@ -1,5 +1,17 @@
-#include "libft.h"
-#include "ft_printf.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_di_print.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
+/*   Updated: 2021/01/13 14:19:56 by rcarmen          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../libft/include/libft.h"
+#include "../ft_printf.h"
 
 static void		set_lenth_put_char(t_specs *stuff, const char c, int fd)
 {
@@ -43,7 +55,7 @@ static void		flag_zero_and_none_influence(t_specs *stuff, int nbr, int nbr_len, 
 			set_lenth_put_char(stuff, '-', 1);
 	while (i++ < diff)
 		set_lenth_put_char(stuff, '0', 1);
-	ft_putnbr_fd(nbr, 1);
+	ft_ptf_putnbr_fd(nbr, 1);
 }
 
 static void 	flag_minus_influence(t_specs *stuff, int	nbr, int nbr_len, int diff)
@@ -57,7 +69,7 @@ static void 	flag_minus_influence(t_specs *stuff, int	nbr, int nbr_len, int diff
 			ft_putchar_fd('-', 1);
 		while (i++ < diff)
 			ft_putchar_fd('0', 1);
-		ft_putnbr_fd(nbr, 1);
+		ft_ptf_putnbr_fd(nbr, 1);
 		if (nbr < 0)
 			while (--stuff->width > nbr_len + diff)
 				ft_putchar_fd(' ', 1);
@@ -70,7 +82,7 @@ static void 	flag_minus_influence(t_specs *stuff, int	nbr, int nbr_len, int diff
 
 }
 
-void			di_print(t_specs *stuff)
+void			ft_di_print(t_specs *stuff)
 {
 	int			nbr_len;
 	int			nbr;

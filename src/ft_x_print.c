@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_x_print.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcarmen <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2020/11/05 22:08:38 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/13 14:07:13 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft/include/libft.h"
+#include "../ft_printf.h"
 
-int		ft_isdigit(int c)
+void		ft_x_print(t_specs *stuff)
 {
-	return ((c > 47 && c < 58));
+	(void)stuff;
 }

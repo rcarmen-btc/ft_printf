@@ -6,12 +6,12 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/12 11:30:13 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/13 14:11:30 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "ft_printf.h"
+#include "../libft/include/libft.h"
+#include "../ft_printf.h"
 
 int				ft_printf(const char *f_str, ...)
 {
@@ -32,7 +32,7 @@ int				ft_printf(const char *f_str, ...)
 			stuff->f_str++;
 		}
 		if (*(stuff->f_str) && *(stuff->f_str) == '%')
-			specifier_parser(stuff);
+			ft_specifier_parser(stuff);
 	}
 	va_end(stuff->f_varg);
 	lenth = stuff->full_lenth;

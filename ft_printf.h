@@ -38,14 +38,14 @@ typedef struct		s_specs
 	unsigned int 	full_lenth;
 } 					t_specs;
 
-int			ft_printf(const char *s, ...);
-//void		dig_int_print(t_specs *stuff);
-void		di_print(t_specs *buff);
-int			print_specifier(t_specs *stuff);
-void		specifier_parser(t_specs *stuff);
-void		char_print(t_specs *stuff);
-void		str_print(t_specs *stuff);
-void		hex_print(t_specs *stuff);
-void 		upper_hex_print(t_specs *stuff);
+int					ft_printf(const char *s, ...);
+void				ft_ptf_putnbr_fd(int n, int fd);
+void				ft_di_print(t_specs *buff);
+int					ft_print_specifier(t_specs *stuff);
+void				ft_specifier_parser(t_specs *stuff);
+void				ft_c_print(t_specs *stuff);
+void				ft_s_print(t_specs *stuff);
+void				ft_x_print(t_specs *stuff);
+void 				ft_upper_x_print(t_specs *stuff);
 
 #endif

@@ -2,48 +2,55 @@ NAME = libftprintf.a
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -c
 
-SRC_FILE = ./
+SRC_FILE = ./src/
 
 OBJ_FILE = ./
 
-INCLUDE = ./include/ft_printf.h
+INCLUDE = ./ft_printf.h
+
+#SRC = ./src/*.c ./libft/*.c
+
+#OBJ = ./*.o
+
 
 SRC = $(SRC_FILE)ft_printf.c \
-	$(SRC_FILE)specifier_parser.c \
-	$(SRC_FILE)di_print.c \
-	$(SRC_FILE)x_print.c \
-	$(SRC_FILE)upper_x_print.c \
-	$(SRC_FILE)print_specifier.c \
-	$(SRC_FILE)s_print.c\
+	$(SRC_FILE)ft_specifier_parser.c \
+	$(SRC_FILE)ft_di_print.c \
+	$(SRC_FILE)ft_x_print.c \
+	$(SRC_FILE)ft_upper_x_print.c \
+	$(SRC_FILE)ft_print_specifier.c \
+	$(SRC_FILE)ft_s_print.c \
+	$(SRC_FILE)ft_c_print.c \
+	$(SRC_FILE)ft_ptf_putnbr_fd.c \
 
 
-OBJ = $(OBJ_FILE)ft_printf.c \
-	$(OBJ_FILE)specifier_parser.c \
-	$(OBJ_FILE)di_print.c \
-	$(OBJ_FILE)x_print.c \
-	$(OBJ_FILE)upper_x_print.c \
-	$(OBJ_FILE)print_specifier.c \
-	$(OBJ_FILE)s_print.c\
+OBJ = $(OBJ_FILE)ft_printf.o \
+	$(OBJ_FILE)ft_specifier_parser.o \
+	$(OBJ_FILE)ft_di_print.o \
+	$(OBJ_FILE)ft_x_print.o \
+	$(OBJ_FILE)ft_upper_x_print.o \
+	$(OBJ_FILE)ft_print_specifier.o \
+	$(OBJ_FILE)ft_s_print.o \
+	$(OBJ_FILE)ft_c_print.o \
+	$(OBJ_FILE)ft_ptf_putnbr_fd.o \
 
 all: $(NAME)
 
-$(NAME): $(SRC)
-	$(MAKE) -C ./libft
+$(NAME): $(SRC) $(INCLUDE)
+	$(MAKE) -C ./libft re
 	mv ./libft/libft.a .
 	mv libft.a libftprintf.a
-	$(CC) $(FLAGS) -c $(SRC)
-	ar rcs $(NAME) $(OBJ) $(LIBFT_OBJ)
-
-#main: $(NAME)
-#	gcc ./src/main.c -c
-#	gcc ./main.o ./libftprintf.a
+	$(CC) -g3 $(FLAGS) $(SRC)
+	ar rcs $(NAME) $(OBJ)
 
 clean:
-	rm 
-fclean:
+	$(MAKE) -C ./libft clean
+	rm -f $(OBJ)
 
-re:
 
-bonus:
+fclean:	clean
+	rm -f $(NAME)
+
+re: fclean all

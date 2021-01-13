@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   specifier_parser.c                                 :+:      :+:    :+:   */
+/*   ft_specifier_parser.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/11 20:59:45 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/13 14:11:54 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "ft_printf.h"
 
-void		flag_detector(t_specs *stuff)
+#include "../libft/include/libft.h"
+#include "../ft_printf.h"
+
+static void			flag_detector(t_specs *stuff)
 {
 	stuff->flag = none;
 	while (*(stuff->f_str) == '-')
@@ -28,7 +29,7 @@ void		flag_detector(t_specs *stuff)
 	}
 }
 
-void		width_detector(t_specs *stuff)
+static void			width_detector(t_specs *stuff)
 {
 	stuff->width = 0;
 	while (ft_isdigit(*(stuff->f_str)))
@@ -45,7 +46,7 @@ void		width_detector(t_specs *stuff)
 	}
 }
 
-void		precision_detector(t_specs *stuff)
+static void			precision_detector(t_specs *stuff)
 {
 	stuff->f_str++;
 	stuff->precision = 0;
@@ -58,7 +59,7 @@ void		precision_detector(t_specs *stuff)
 	}
 }
 
-int			type_detector(t_specs *stuff)
+static int			type_detector(t_specs *stuff)
 {
 	stuff->type = no_type;
 	if (*(stuff->f_str) == 'c')
@@ -85,7 +86,7 @@ int			type_detector(t_specs *stuff)
 	return (1);
 }
 
-void		specifier_parser(t_specs *stuff)
+void		ft_specifier_parser(t_specs *stuff)
 {
 	int		type_detector_return;
 
@@ -110,5 +111,5 @@ void		specifier_parser(t_specs *stuff)
 		ft_putchar_fd('%', 1);
 		stuff->f_str++;
 	}
-	print_specifier(stuff);
+	ft_print_specifier(stuff);
 }

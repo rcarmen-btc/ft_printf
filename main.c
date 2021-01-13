@@ -6,16 +6,8 @@
 
 int main()
 {
-	//ft_printf("1|Hello, world\n");
-	//ft_printf("");
-	//ft_printf("\n");
-	ft_printf("%--0006.4d", 0);
-//	ft_printf("\n");
-//	ft_printf("7: %05");
-//	ft_printf("\n");
-//	ft_printf("8: %-05");
-//	ft_printf("\n");
-//	ft_printf("8: 4343%03d");
-//	ft_printf("\n");
+	//ft_printf("this %i number", 17);
+	ft_printf("=%i\n", ft_printf (tst, w, p, c));
+    printf("=%i\n",    printf (tst, w, p, c));
 	return (0);
 }

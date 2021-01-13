@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_c_print.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcarmen <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/03 16:24:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2020/11/05 22:08:47 by rcarmen          ###   ########.fr       */
+/*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
+/*   Updated: 2021/01/13 14:03:35 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft/include/libft.h"
+#include "../ft_printf.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void		ft_c_print(t_specs *stuff)
 {
-	if (NULL == s)
-		return ;
-	write(fd, s, ft_strlen(s));
+	(void)stuff;
 }
