@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/14 17:37:37 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 17:40:06 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,9 +93,10 @@ void			ft_di_print(t_specs *stuff)
 	if (stuff->point != NULL && nbr == 0)
 		nbr_len--;
 	if (stuff->precision < 0)
-		diff = (diff = -stuff->precision - nbr_len) > 0 ? diff : 0;
+		diff = -stuff->precision - nbr_len;
 	else
-		diff = (diff = stuff->precision - nbr_len) > 0 ? diff : 0;
+		diff = stuff->precision - nbr_len;
+	diff = diff > 0 ? diff : 0;
 	stuff->full_lenth += nbr_len;
 	if (stuff->precision < 0)
 		stuff->precision *= -1;	
