@@ -6,10 +6,9 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/14 15:40:08 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 17:44:43 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../libft/include/libft.h"
 #include "../ft_printf.h"
@@ -18,7 +17,7 @@ static void			flag_detector(t_specs *stuff)
 {
 	stuff->flag = none;
 	while (*(stuff->f_str) == '-' || *(stuff->f_str) == '0')
-	{	
+	{
 		while (*(stuff->f_str) == '-')
 		{
 			stuff->flag |= minus;
@@ -89,9 +88,9 @@ static int			type_detector(t_specs *stuff)
 	return (1);
 }
 
-void		ft_specifier_parser(t_specs *stuff)
+void				ft_specifier_parser(t_specs *stuff)
 {
-	int		type_detector_return;
+	int				type_detector_return;
 
 	stuff->f_str++;
 	stuff->point = ft_strchr(stuff->f_str, '.');

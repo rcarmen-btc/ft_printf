@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/14 17:40:06 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 17:47:20 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ static void			mi_fl_influ(t_specs *stuff, int nbr, int nbr_len, int diff)
 		ot_fl_influ(stuff, nbr, nbr_len, diff);
 }
 
-void			ft_di_print(t_specs *stuff)
+void				ft_di_print(t_specs *stuff)
 {
 	int			nbr_len;
 	int			nbr;
@@ -99,6 +99,6 @@ void			ft_di_print(t_specs *stuff)
 	diff = diff > 0 ? diff : 0;
 	stuff->full_lenth += nbr_len;
 	if (stuff->precision < 0)
-		stuff->precision *= -1;	
-	mi_fl_influence(stuff, nbr, nbr_len, diff);
+		stuff->precision *= -1;
+	mi_fl_influ(stuff, nbr, nbr_len, diff);
 }
