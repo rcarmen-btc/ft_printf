@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/rcarmen/school42/ptf/di_print.c
-libft.h
-/home/rcarmen/school42/ptf/libft.h
-ft_printf.h
-/home/rcarmen/school42/ptf/ft_printf.h
-
 /home/rcarmen/school42/ptf/ft_printf.h
 stdio.h
 -

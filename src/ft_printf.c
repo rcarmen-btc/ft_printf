@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 14:11:30 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 17:12:59 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int				ft_printf(const char *f_str, ...)
 
 	if (!(stuff = (t_specs *)malloc(sizeof(t_specs))))
 		return (-1);
+	ft_bzero(stuff, sizeof(t_specs));
 	va_start(stuff->f_varg, f_str);
-	stuff->full_lenth = 0;
 	stuff->f_str = f_str;
 	while (*(stuff->f_str))
 	{

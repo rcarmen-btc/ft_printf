@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 14:11:54 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 15:40:08 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,18 @@
 static void			flag_detector(t_specs *stuff)
 {
 	stuff->flag = none;
-	while (*(stuff->f_str) == '-')
-	{
-		stuff->flag |= minus;
-		stuff->f_str++;
-	}
-	while (*(stuff->f_str) == '0')
-	{
-		stuff->flag |= zero;
-		stuff->f_str++;
+	while (*(stuff->f_str) == '-' || *(stuff->f_str) == '0')
+	{	
+		while (*(stuff->f_str) == '-')
+		{
+			stuff->flag |= minus;
+			stuff->f_str++;
+		}
+		while (*(stuff->f_str) == '0')
+		{
+			stuff->flag |= zero;
+			stuff->f_str++;
+		}
 	}
 }
 

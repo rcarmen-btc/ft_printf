@@ -77,57 +77,57 @@ include CMakeFiles/ptf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ptf.dir/flags.make
 
-CMakeFiles/ptf.dir/ft_printf.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_printf.c.o: ../ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ptf.dir/ft_printf.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_printf.c.o   -c /home/rcarmen/school42/ptf/ft_printf.c
+CMakeFiles/ptf.dir/src/ft_printf.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_printf.c.o: ../src/ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ptf.dir/src/ft_printf.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_printf.c.o   -c /home/rcarmen/school42/ptf/src/ft_printf.c
 
-CMakeFiles/ptf.dir/ft_printf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_printf.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_printf.c > CMakeFiles/ptf.dir/ft_printf.c.i
+CMakeFiles/ptf.dir/src/ft_printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_printf.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_printf.c > CMakeFiles/ptf.dir/src/ft_printf.c.i
 
-CMakeFiles/ptf.dir/ft_printf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_printf.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_printf.c -o CMakeFiles/ptf.dir/ft_printf.c.s
+CMakeFiles/ptf.dir/src/ft_printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_printf.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_printf.c -o CMakeFiles/ptf.dir/src/ft_printf.c.s
 
-CMakeFiles/ptf.dir/ft_putchar_fd.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_putchar_fd.c.o: ../ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ptf.dir/ft_putchar_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_putchar_fd.c.o   -c /home/rcarmen/school42/ptf/ft_putchar_fd.c
+CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.o   -c /home/rcarmen/school42/ptf/libft/ft_putchar_fd.c
 
-CMakeFiles/ptf.dir/ft_putchar_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_putchar_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_putchar_fd.c > CMakeFiles/ptf.dir/ft_putchar_fd.c.i
+CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/libft/ft_putchar_fd.c > CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.i
 
-CMakeFiles/ptf.dir/ft_putchar_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_putchar_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_putchar_fd.c -o CMakeFiles/ptf.dir/ft_putchar_fd.c.s
+CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/libft/ft_putchar_fd.c -o CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.s
 
-CMakeFiles/ptf.dir/ft_putstr_fd.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_putstr_fd.c.o: ../ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ptf.dir/ft_putstr_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_putstr_fd.c.o   -c /home/rcarmen/school42/ptf/ft_putstr_fd.c
+CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.o   -c /home/rcarmen/school42/ptf/libft/ft_putstr_fd.c
 
-CMakeFiles/ptf.dir/ft_putstr_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_putstr_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_putstr_fd.c > CMakeFiles/ptf.dir/ft_putstr_fd.c.i
+CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/libft/ft_putstr_fd.c > CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.i
 
-CMakeFiles/ptf.dir/ft_putstr_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_putstr_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_putstr_fd.c -o CMakeFiles/ptf.dir/ft_putstr_fd.c.s
+CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/libft/ft_putstr_fd.c -o CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.s
 
-CMakeFiles/ptf.dir/ft_strlen.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_strlen.c.o: ../ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ptf.dir/ft_strlen.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_strlen.c.o   -c /home/rcarmen/school42/ptf/ft_strlen.c
+CMakeFiles/ptf.dir/libft/ft_strlen.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ptf.dir/libft/ft_strlen.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/libft/ft_strlen.c.o   -c /home/rcarmen/school42/ptf/libft/ft_strlen.c
 
-CMakeFiles/ptf.dir/ft_strlen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_strlen.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_strlen.c > CMakeFiles/ptf.dir/ft_strlen.c.i
+CMakeFiles/ptf.dir/libft/ft_strlen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/libft/ft_strlen.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/libft/ft_strlen.c > CMakeFiles/ptf.dir/libft/ft_strlen.c.i
 
-CMakeFiles/ptf.dir/ft_strlen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_strlen.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_strlen.c -o CMakeFiles/ptf.dir/ft_strlen.c.s
+CMakeFiles/ptf.dir/libft/ft_strlen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/libft/ft_strlen.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/libft/ft_strlen.c -o CMakeFiles/ptf.dir/libft/ft_strlen.c.s
 
 CMakeFiles/ptf.dir/main.c.o: CMakeFiles/ptf.dir/flags.make
 CMakeFiles/ptf.dir/main.c.o: ../main.c
@@ -142,190 +142,205 @@ CMakeFiles/ptf.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/main.c -o CMakeFiles/ptf.dir/main.c.s
 
-CMakeFiles/ptf.dir/specifier_parser.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/specifier_parser.c.o: ../specifier_parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ptf.dir/specifier_parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/specifier_parser.c.o   -c /home/rcarmen/school42/ptf/specifier_parser.c
+CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o: ../src/ft_specifier_parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o   -c /home/rcarmen/school42/ptf/src/ft_specifier_parser.c
 
-CMakeFiles/ptf.dir/specifier_parser.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/specifier_parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/specifier_parser.c > CMakeFiles/ptf.dir/specifier_parser.c.i
+CMakeFiles/ptf.dir/src/ft_specifier_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_specifier_parser.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_specifier_parser.c > CMakeFiles/ptf.dir/src/ft_specifier_parser.c.i
 
-CMakeFiles/ptf.dir/specifier_parser.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/specifier_parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/specifier_parser.c -o CMakeFiles/ptf.dir/specifier_parser.c.s
+CMakeFiles/ptf.dir/src/ft_specifier_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_specifier_parser.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_specifier_parser.c -o CMakeFiles/ptf.dir/src/ft_specifier_parser.c.s
 
-CMakeFiles/ptf.dir/ft_strchr.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_strchr.c.o: ../ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ptf.dir/ft_strchr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_strchr.c.o   -c /home/rcarmen/school42/ptf/ft_strchr.c
+CMakeFiles/ptf.dir/libft/ft_strchr.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ptf.dir/libft/ft_strchr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/libft/ft_strchr.c.o   -c /home/rcarmen/school42/ptf/libft/ft_strchr.c
 
-CMakeFiles/ptf.dir/ft_strchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_strchr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_strchr.c > CMakeFiles/ptf.dir/ft_strchr.c.i
+CMakeFiles/ptf.dir/libft/ft_strchr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/libft/ft_strchr.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/libft/ft_strchr.c > CMakeFiles/ptf.dir/libft/ft_strchr.c.i
 
-CMakeFiles/ptf.dir/ft_strchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_strchr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_strchr.c -o CMakeFiles/ptf.dir/ft_strchr.c.s
+CMakeFiles/ptf.dir/libft/ft_strchr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/libft/ft_strchr.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/libft/ft_strchr.c -o CMakeFiles/ptf.dir/libft/ft_strchr.c.s
 
-CMakeFiles/ptf.dir/ft_isdigit.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_isdigit.c.o: ../ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ptf.dir/ft_isdigit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_isdigit.c.o   -c /home/rcarmen/school42/ptf/ft_isdigit.c
+CMakeFiles/ptf.dir/libft/ft_isdigit.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ptf.dir/libft/ft_isdigit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/libft/ft_isdigit.c.o   -c /home/rcarmen/school42/ptf/libft/ft_isdigit.c
 
-CMakeFiles/ptf.dir/ft_isdigit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_isdigit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_isdigit.c > CMakeFiles/ptf.dir/ft_isdigit.c.i
+CMakeFiles/ptf.dir/libft/ft_isdigit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/libft/ft_isdigit.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/libft/ft_isdigit.c > CMakeFiles/ptf.dir/libft/ft_isdigit.c.i
 
-CMakeFiles/ptf.dir/ft_isdigit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_isdigit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_isdigit.c -o CMakeFiles/ptf.dir/ft_isdigit.c.s
+CMakeFiles/ptf.dir/libft/ft_isdigit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/libft/ft_isdigit.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/libft/ft_isdigit.c -o CMakeFiles/ptf.dir/libft/ft_isdigit.c.s
 
-CMakeFiles/ptf.dir/print_specifier.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/print_specifier.c.o: ../print_specifier.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ptf.dir/print_specifier.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/print_specifier.c.o   -c /home/rcarmen/school42/ptf/print_specifier.c
+CMakeFiles/ptf.dir/src/ft_print_specifier.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_print_specifier.c.o: ../src/ft_print_specifier.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ptf.dir/src/ft_print_specifier.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_print_specifier.c.o   -c /home/rcarmen/school42/ptf/src/ft_print_specifier.c
 
-CMakeFiles/ptf.dir/print_specifier.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/print_specifier.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/print_specifier.c > CMakeFiles/ptf.dir/print_specifier.c.i
+CMakeFiles/ptf.dir/src/ft_print_specifier.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_print_specifier.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_print_specifier.c > CMakeFiles/ptf.dir/src/ft_print_specifier.c.i
 
-CMakeFiles/ptf.dir/print_specifier.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/print_specifier.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/print_specifier.c -o CMakeFiles/ptf.dir/print_specifier.c.s
+CMakeFiles/ptf.dir/src/ft_print_specifier.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_print_specifier.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_print_specifier.c -o CMakeFiles/ptf.dir/src/ft_print_specifier.c.s
 
-CMakeFiles/ptf.dir/ft_itoa.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_itoa.c.o: ../ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ptf.dir/ft_itoa.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_itoa.c.o   -c /home/rcarmen/school42/ptf/ft_itoa.c
+CMakeFiles/ptf.dir/src/ft_c_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_c_print.c.o: ../src/ft_c_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ptf.dir/src/ft_c_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_c_print.c.o   -c /home/rcarmen/school42/ptf/src/ft_c_print.c
 
-CMakeFiles/ptf.dir/ft_itoa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_itoa.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_itoa.c > CMakeFiles/ptf.dir/ft_itoa.c.i
+CMakeFiles/ptf.dir/src/ft_c_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_c_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_c_print.c > CMakeFiles/ptf.dir/src/ft_c_print.c.i
 
-CMakeFiles/ptf.dir/ft_itoa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_itoa.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_itoa.c -o CMakeFiles/ptf.dir/ft_itoa.c.s
+CMakeFiles/ptf.dir/src/ft_c_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_c_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_c_print.c -o CMakeFiles/ptf.dir/src/ft_c_print.c.s
 
-CMakeFiles/ptf.dir/char_print.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/char_print.c.o: ../char_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ptf.dir/char_print.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/char_print.c.o   -c /home/rcarmen/school42/ptf/char_print.c
+CMakeFiles/ptf.dir/src/ft_x_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_x_print.c.o: ../src/ft_x_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ptf.dir/src/ft_x_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_x_print.c.o   -c /home/rcarmen/school42/ptf/src/ft_x_print.c
 
-CMakeFiles/ptf.dir/char_print.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/char_print.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/char_print.c > CMakeFiles/ptf.dir/char_print.c.i
+CMakeFiles/ptf.dir/src/ft_x_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_x_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_x_print.c > CMakeFiles/ptf.dir/src/ft_x_print.c.i
 
-CMakeFiles/ptf.dir/char_print.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/char_print.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/char_print.c -o CMakeFiles/ptf.dir/char_print.c.s
+CMakeFiles/ptf.dir/src/ft_x_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_x_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_x_print.c -o CMakeFiles/ptf.dir/src/ft_x_print.c.s
 
-CMakeFiles/ptf.dir/hex_print.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/hex_print.c.o: ../hex_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ptf.dir/hex_print.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/hex_print.c.o   -c /home/rcarmen/school42/ptf/hex_print.c
+CMakeFiles/ptf.dir/src/ft_s_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_s_print.c.o: ../src/ft_s_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ptf.dir/src/ft_s_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_s_print.c.o   -c /home/rcarmen/school42/ptf/src/ft_s_print.c
 
-CMakeFiles/ptf.dir/hex_print.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/hex_print.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/hex_print.c > CMakeFiles/ptf.dir/hex_print.c.i
+CMakeFiles/ptf.dir/src/ft_s_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_s_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_s_print.c > CMakeFiles/ptf.dir/src/ft_s_print.c.i
 
-CMakeFiles/ptf.dir/hex_print.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/hex_print.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/hex_print.c -o CMakeFiles/ptf.dir/hex_print.c.s
+CMakeFiles/ptf.dir/src/ft_s_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_s_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_s_print.c -o CMakeFiles/ptf.dir/src/ft_s_print.c.s
 
-CMakeFiles/ptf.dir/str_print.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/str_print.c.o: ../str_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ptf.dir/str_print.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/str_print.c.o   -c /home/rcarmen/school42/ptf/str_print.c
+CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o: ../src/ft_upper_x_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o   -c /home/rcarmen/school42/ptf/src/ft_upper_x_print.c
 
-CMakeFiles/ptf.dir/str_print.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/str_print.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/str_print.c > CMakeFiles/ptf.dir/str_print.c.i
+CMakeFiles/ptf.dir/src/ft_upper_x_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_upper_x_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_upper_x_print.c > CMakeFiles/ptf.dir/src/ft_upper_x_print.c.i
 
-CMakeFiles/ptf.dir/str_print.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/str_print.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/str_print.c -o CMakeFiles/ptf.dir/str_print.c.s
+CMakeFiles/ptf.dir/src/ft_upper_x_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_upper_x_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_upper_x_print.c -o CMakeFiles/ptf.dir/src/ft_upper_x_print.c.s
 
-CMakeFiles/ptf.dir/upper_hex_print.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/upper_hex_print.c.o: ../upper_hex_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ptf.dir/upper_hex_print.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/upper_hex_print.c.o   -c /home/rcarmen/school42/ptf/upper_hex_print.c
+CMakeFiles/ptf.dir/src/ft_di_print.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_di_print.c.o: ../src/ft_di_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ptf.dir/src/ft_di_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_di_print.c.o   -c /home/rcarmen/school42/ptf/src/ft_di_print.c
 
-CMakeFiles/ptf.dir/upper_hex_print.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/upper_hex_print.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/upper_hex_print.c > CMakeFiles/ptf.dir/upper_hex_print.c.i
+CMakeFiles/ptf.dir/src/ft_di_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_di_print.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_di_print.c > CMakeFiles/ptf.dir/src/ft_di_print.c.i
 
-CMakeFiles/ptf.dir/upper_hex_print.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/upper_hex_print.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/upper_hex_print.c -o CMakeFiles/ptf.dir/upper_hex_print.c.s
+CMakeFiles/ptf.dir/src/ft_di_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_di_print.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_di_print.c -o CMakeFiles/ptf.dir/src/ft_di_print.c.s
 
-CMakeFiles/ptf.dir/di_print.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/di_print.c.o: ../di_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ptf.dir/di_print.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/di_print.c.o   -c /home/rcarmen/school42/ptf/di_print.c
+CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o: ../src/ft_ptf_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o   -c /home/rcarmen/school42/ptf/src/ft_ptf_putnbr_fd.c
 
-CMakeFiles/ptf.dir/di_print.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/di_print.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/di_print.c > CMakeFiles/ptf.dir/di_print.c.i
+CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/src/ft_ptf_putnbr_fd.c > CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.i
 
-CMakeFiles/ptf.dir/di_print.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/di_print.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/di_print.c -o CMakeFiles/ptf.dir/di_print.c.s
+CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/src/ft_ptf_putnbr_fd.c -o CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.s
 
-CMakeFiles/ptf.dir/ft_putnbr_fd.c.o: CMakeFiles/ptf.dir/flags.make
-CMakeFiles/ptf.dir/ft_putnbr_fd.c.o: ../ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ptf.dir/ft_putnbr_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/ft_putnbr_fd.c.o   -c /home/rcarmen/school42/ptf/ft_putnbr_fd.c
+CMakeFiles/ptf.dir/libft/ft_bzero.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ptf.dir/libft/ft_bzero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/libft/ft_bzero.c.o   -c /home/rcarmen/school42/ptf/libft/ft_bzero.c
 
-CMakeFiles/ptf.dir/ft_putnbr_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/ft_putnbr_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/ft_putnbr_fd.c > CMakeFiles/ptf.dir/ft_putnbr_fd.c.i
+CMakeFiles/ptf.dir/libft/ft_bzero.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/libft/ft_bzero.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/libft/ft_bzero.c > CMakeFiles/ptf.dir/libft/ft_bzero.c.i
 
-CMakeFiles/ptf.dir/ft_putnbr_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/ft_putnbr_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/ft_putnbr_fd.c -o CMakeFiles/ptf.dir/ft_putnbr_fd.c.s
+CMakeFiles/ptf.dir/libft/ft_bzero.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/libft/ft_bzero.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/libft/ft_bzero.c -o CMakeFiles/ptf.dir/libft/ft_bzero.c.s
+
+CMakeFiles/ptf.dir/libft/ft_memset.c.o: CMakeFiles/ptf.dir/flags.make
+CMakeFiles/ptf.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ptf.dir/libft/ft_memset.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ptf.dir/libft/ft_memset.c.o   -c /home/rcarmen/school42/ptf/libft/ft_memset.c
+
+CMakeFiles/ptf.dir/libft/ft_memset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ptf.dir/libft/ft_memset.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rcarmen/school42/ptf/libft/ft_memset.c > CMakeFiles/ptf.dir/libft/ft_memset.c.i
+
+CMakeFiles/ptf.dir/libft/ft_memset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ptf.dir/libft/ft_memset.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rcarmen/school42/ptf/libft/ft_memset.c -o CMakeFiles/ptf.dir/libft/ft_memset.c.s
 
 # Object files for target ptf
 ptf_OBJECTS = \
-"CMakeFiles/ptf.dir/ft_printf.c.o" \
-"CMakeFiles/ptf.dir/ft_putchar_fd.c.o" \
-"CMakeFiles/ptf.dir/ft_putstr_fd.c.o" \
-"CMakeFiles/ptf.dir/ft_strlen.c.o" \
+"CMakeFiles/ptf.dir/src/ft_printf.c.o" \
+"CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.o" \
+"CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.o" \
+"CMakeFiles/ptf.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/ptf.dir/main.c.o" \
-"CMakeFiles/ptf.dir/specifier_parser.c.o" \
-"CMakeFiles/ptf.dir/ft_strchr.c.o" \
-"CMakeFiles/ptf.dir/ft_isdigit.c.o" \
-"CMakeFiles/ptf.dir/print_specifier.c.o" \
-"CMakeFiles/ptf.dir/ft_itoa.c.o" \
-"CMakeFiles/ptf.dir/char_print.c.o" \
-"CMakeFiles/ptf.dir/hex_print.c.o" \
-"CMakeFiles/ptf.dir/str_print.c.o" \
-"CMakeFiles/ptf.dir/upper_hex_print.c.o" \
-"CMakeFiles/ptf.dir/di_print.c.o" \
-"CMakeFiles/ptf.dir/ft_putnbr_fd.c.o"
+"CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o" \
+"CMakeFiles/ptf.dir/libft/ft_strchr.c.o" \
+"CMakeFiles/ptf.dir/libft/ft_isdigit.c.o" \
+"CMakeFiles/ptf.dir/src/ft_print_specifier.c.o" \
+"CMakeFiles/ptf.dir/src/ft_c_print.c.o" \
+"CMakeFiles/ptf.dir/src/ft_x_print.c.o" \
+"CMakeFiles/ptf.dir/src/ft_s_print.c.o" \
+"CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o" \
+"CMakeFiles/ptf.dir/src/ft_di_print.c.o" \
+"CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o" \
+"CMakeFiles/ptf.dir/libft/ft_bzero.c.o" \
+"CMakeFiles/ptf.dir/libft/ft_memset.c.o"
 
 # External object files for target ptf
 ptf_EXTERNAL_OBJECTS =
 
-ptf: CMakeFiles/ptf.dir/ft_printf.c.o
-ptf: CMakeFiles/ptf.dir/ft_putchar_fd.c.o
-ptf: CMakeFiles/ptf.dir/ft_putstr_fd.c.o
-ptf: CMakeFiles/ptf.dir/ft_strlen.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_printf.c.o
+ptf: CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.o
+ptf: CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.o
+ptf: CMakeFiles/ptf.dir/libft/ft_strlen.c.o
 ptf: CMakeFiles/ptf.dir/main.c.o
-ptf: CMakeFiles/ptf.dir/specifier_parser.c.o
-ptf: CMakeFiles/ptf.dir/ft_strchr.c.o
-ptf: CMakeFiles/ptf.dir/ft_isdigit.c.o
-ptf: CMakeFiles/ptf.dir/print_specifier.c.o
-ptf: CMakeFiles/ptf.dir/ft_itoa.c.o
-ptf: CMakeFiles/ptf.dir/char_print.c.o
-ptf: CMakeFiles/ptf.dir/hex_print.c.o
-ptf: CMakeFiles/ptf.dir/str_print.c.o
-ptf: CMakeFiles/ptf.dir/upper_hex_print.c.o
-ptf: CMakeFiles/ptf.dir/di_print.c.o
-ptf: CMakeFiles/ptf.dir/ft_putnbr_fd.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o
+ptf: CMakeFiles/ptf.dir/libft/ft_strchr.c.o
+ptf: CMakeFiles/ptf.dir/libft/ft_isdigit.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_print_specifier.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_c_print.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_x_print.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_s_print.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_di_print.c.o
+ptf: CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o
+ptf: CMakeFiles/ptf.dir/libft/ft_bzero.c.o
+ptf: CMakeFiles/ptf.dir/libft/ft_memset.c.o
 ptf: CMakeFiles/ptf.dir/build.make
 ptf: CMakeFiles/ptf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable ptf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rcarmen/school42/ptf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable ptf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ptf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

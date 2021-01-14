@@ -143,302 +143,194 @@ ptf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/build
 .PHONY : ptf/fast
 
-char_print.o: char_print.c.o
+libft/ft_bzero.o: libft/ft_bzero.c.o
 
-.PHONY : char_print.o
-
-# target to build an object file
-char_print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/char_print.c.o
-.PHONY : char_print.c.o
-
-char_print.i: char_print.c.i
-
-.PHONY : char_print.i
-
-# target to preprocess a source file
-char_print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/char_print.c.i
-.PHONY : char_print.c.i
-
-char_print.s: char_print.c.s
-
-.PHONY : char_print.s
-
-# target to generate assembly for a file
-char_print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/char_print.c.s
-.PHONY : char_print.c.s
-
-di_print.o: di_print.c.o
-
-.PHONY : di_print.o
+.PHONY : libft/ft_bzero.o
 
 # target to build an object file
-di_print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/di_print.c.o
-.PHONY : di_print.c.o
+libft/ft_bzero.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_bzero.c.o
+.PHONY : libft/ft_bzero.c.o
 
-di_print.i: di_print.c.i
+libft/ft_bzero.i: libft/ft_bzero.c.i
 
-.PHONY : di_print.i
+.PHONY : libft/ft_bzero.i
 
 # target to preprocess a source file
-di_print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/di_print.c.i
-.PHONY : di_print.c.i
+libft/ft_bzero.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_bzero.c.i
+.PHONY : libft/ft_bzero.c.i
 
-di_print.s: di_print.c.s
+libft/ft_bzero.s: libft/ft_bzero.c.s
 
-.PHONY : di_print.s
+.PHONY : libft/ft_bzero.s
 
 # target to generate assembly for a file
-di_print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/di_print.c.s
-.PHONY : di_print.c.s
+libft/ft_bzero.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_bzero.c.s
+.PHONY : libft/ft_bzero.c.s
 
-ft_isdigit.o: ft_isdigit.c.o
+libft/ft_isdigit.o: libft/ft_isdigit.c.o
 
-.PHONY : ft_isdigit.o
+.PHONY : libft/ft_isdigit.o
 
 # target to build an object file
-ft_isdigit.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_isdigit.c.o
-.PHONY : ft_isdigit.c.o
+libft/ft_isdigit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_isdigit.c.o
+.PHONY : libft/ft_isdigit.c.o
 
-ft_isdigit.i: ft_isdigit.c.i
+libft/ft_isdigit.i: libft/ft_isdigit.c.i
 
-.PHONY : ft_isdigit.i
+.PHONY : libft/ft_isdigit.i
 
 # target to preprocess a source file
-ft_isdigit.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_isdigit.c.i
-.PHONY : ft_isdigit.c.i
+libft/ft_isdigit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_isdigit.c.i
+.PHONY : libft/ft_isdigit.c.i
 
-ft_isdigit.s: ft_isdigit.c.s
+libft/ft_isdigit.s: libft/ft_isdigit.c.s
 
-.PHONY : ft_isdigit.s
+.PHONY : libft/ft_isdigit.s
 
 # target to generate assembly for a file
-ft_isdigit.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_isdigit.c.s
-.PHONY : ft_isdigit.c.s
+libft/ft_isdigit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_isdigit.c.s
+.PHONY : libft/ft_isdigit.c.s
 
-ft_itoa.o: ft_itoa.c.o
+libft/ft_memset.o: libft/ft_memset.c.o
 
-.PHONY : ft_itoa.o
+.PHONY : libft/ft_memset.o
 
 # target to build an object file
-ft_itoa.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_itoa.c.o
-.PHONY : ft_itoa.c.o
+libft/ft_memset.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_memset.c.o
+.PHONY : libft/ft_memset.c.o
 
-ft_itoa.i: ft_itoa.c.i
+libft/ft_memset.i: libft/ft_memset.c.i
 
-.PHONY : ft_itoa.i
+.PHONY : libft/ft_memset.i
 
 # target to preprocess a source file
-ft_itoa.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_itoa.c.i
-.PHONY : ft_itoa.c.i
+libft/ft_memset.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_memset.c.i
+.PHONY : libft/ft_memset.c.i
 
-ft_itoa.s: ft_itoa.c.s
+libft/ft_memset.s: libft/ft_memset.c.s
 
-.PHONY : ft_itoa.s
+.PHONY : libft/ft_memset.s
 
 # target to generate assembly for a file
-ft_itoa.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_itoa.c.s
-.PHONY : ft_itoa.c.s
+libft/ft_memset.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_memset.c.s
+.PHONY : libft/ft_memset.c.s
 
-ft_printf.o: ft_printf.c.o
+libft/ft_putchar_fd.o: libft/ft_putchar_fd.c.o
 
-.PHONY : ft_printf.o
+.PHONY : libft/ft_putchar_fd.o
 
 # target to build an object file
-ft_printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_printf.c.o
-.PHONY : ft_printf.c.o
+libft/ft_putchar_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.o
+.PHONY : libft/ft_putchar_fd.c.o
 
-ft_printf.i: ft_printf.c.i
+libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
 
-.PHONY : ft_printf.i
+.PHONY : libft/ft_putchar_fd.i
 
 # target to preprocess a source file
-ft_printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_printf.c.i
-.PHONY : ft_printf.c.i
+libft/ft_putchar_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.i
+.PHONY : libft/ft_putchar_fd.c.i
 
-ft_printf.s: ft_printf.c.s
+libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
 
-.PHONY : ft_printf.s
+.PHONY : libft/ft_putchar_fd.s
 
 # target to generate assembly for a file
-ft_printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_printf.c.s
-.PHONY : ft_printf.c.s
+libft/ft_putchar_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_putchar_fd.c.s
+.PHONY : libft/ft_putchar_fd.c.s
 
-ft_putchar_fd.o: ft_putchar_fd.c.o
+libft/ft_putstr_fd.o: libft/ft_putstr_fd.c.o
 
-.PHONY : ft_putchar_fd.o
+.PHONY : libft/ft_putstr_fd.o
 
 # target to build an object file
-ft_putchar_fd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putchar_fd.c.o
-.PHONY : ft_putchar_fd.c.o
+libft/ft_putstr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.o
+.PHONY : libft/ft_putstr_fd.c.o
 
-ft_putchar_fd.i: ft_putchar_fd.c.i
+libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
 
-.PHONY : ft_putchar_fd.i
+.PHONY : libft/ft_putstr_fd.i
 
 # target to preprocess a source file
-ft_putchar_fd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putchar_fd.c.i
-.PHONY : ft_putchar_fd.c.i
+libft/ft_putstr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.i
+.PHONY : libft/ft_putstr_fd.c.i
 
-ft_putchar_fd.s: ft_putchar_fd.c.s
+libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
 
-.PHONY : ft_putchar_fd.s
+.PHONY : libft/ft_putstr_fd.s
 
 # target to generate assembly for a file
-ft_putchar_fd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putchar_fd.c.s
-.PHONY : ft_putchar_fd.c.s
+libft/ft_putstr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_putstr_fd.c.s
+.PHONY : libft/ft_putstr_fd.c.s
 
-ft_putnbr_fd.o: ft_putnbr_fd.c.o
+libft/ft_strchr.o: libft/ft_strchr.c.o
 
-.PHONY : ft_putnbr_fd.o
+.PHONY : libft/ft_strchr.o
 
 # target to build an object file
-ft_putnbr_fd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putnbr_fd.c.o
-.PHONY : ft_putnbr_fd.c.o
+libft/ft_strchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strchr.c.o
+.PHONY : libft/ft_strchr.c.o
 
-ft_putnbr_fd.i: ft_putnbr_fd.c.i
+libft/ft_strchr.i: libft/ft_strchr.c.i
 
-.PHONY : ft_putnbr_fd.i
+.PHONY : libft/ft_strchr.i
 
 # target to preprocess a source file
-ft_putnbr_fd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putnbr_fd.c.i
-.PHONY : ft_putnbr_fd.c.i
+libft/ft_strchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strchr.c.i
+.PHONY : libft/ft_strchr.c.i
 
-ft_putnbr_fd.s: ft_putnbr_fd.c.s
+libft/ft_strchr.s: libft/ft_strchr.c.s
 
-.PHONY : ft_putnbr_fd.s
+.PHONY : libft/ft_strchr.s
 
 # target to generate assembly for a file
-ft_putnbr_fd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putnbr_fd.c.s
-.PHONY : ft_putnbr_fd.c.s
+libft/ft_strchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strchr.c.s
+.PHONY : libft/ft_strchr.c.s
 
-ft_putstr_fd.o: ft_putstr_fd.c.o
+libft/ft_strlen.o: libft/ft_strlen.c.o
 
-.PHONY : ft_putstr_fd.o
+.PHONY : libft/ft_strlen.o
 
 # target to build an object file
-ft_putstr_fd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putstr_fd.c.o
-.PHONY : ft_putstr_fd.c.o
+libft/ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strlen.c.o
+.PHONY : libft/ft_strlen.c.o
 
-ft_putstr_fd.i: ft_putstr_fd.c.i
+libft/ft_strlen.i: libft/ft_strlen.c.i
 
-.PHONY : ft_putstr_fd.i
-
-# target to preprocess a source file
-ft_putstr_fd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putstr_fd.c.i
-.PHONY : ft_putstr_fd.c.i
-
-ft_putstr_fd.s: ft_putstr_fd.c.s
-
-.PHONY : ft_putstr_fd.s
-
-# target to generate assembly for a file
-ft_putstr_fd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_putstr_fd.c.s
-.PHONY : ft_putstr_fd.c.s
-
-ft_strchr.o: ft_strchr.c.o
-
-.PHONY : ft_strchr.o
-
-# target to build an object file
-ft_strchr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strchr.c.o
-.PHONY : ft_strchr.c.o
-
-ft_strchr.i: ft_strchr.c.i
-
-.PHONY : ft_strchr.i
+.PHONY : libft/ft_strlen.i
 
 # target to preprocess a source file
-ft_strchr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strchr.c.i
-.PHONY : ft_strchr.c.i
+libft/ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strlen.c.i
+.PHONY : libft/ft_strlen.c.i
 
-ft_strchr.s: ft_strchr.c.s
+libft/ft_strlen.s: libft/ft_strlen.c.s
 
-.PHONY : ft_strchr.s
-
-# target to generate assembly for a file
-ft_strchr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strchr.c.s
-.PHONY : ft_strchr.c.s
-
-ft_strlen.o: ft_strlen.c.o
-
-.PHONY : ft_strlen.o
-
-# target to build an object file
-ft_strlen.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strlen.c.o
-.PHONY : ft_strlen.c.o
-
-ft_strlen.i: ft_strlen.c.i
-
-.PHONY : ft_strlen.i
-
-# target to preprocess a source file
-ft_strlen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strlen.c.i
-.PHONY : ft_strlen.c.i
-
-ft_strlen.s: ft_strlen.c.s
-
-.PHONY : ft_strlen.s
+.PHONY : libft/ft_strlen.s
 
 # target to generate assembly for a file
-ft_strlen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/ft_strlen.c.s
-.PHONY : ft_strlen.c.s
-
-hex_print.o: hex_print.c.o
-
-.PHONY : hex_print.o
-
-# target to build an object file
-hex_print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/hex_print.c.o
-.PHONY : hex_print.c.o
-
-hex_print.i: hex_print.c.i
-
-.PHONY : hex_print.i
-
-# target to preprocess a source file
-hex_print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/hex_print.c.i
-.PHONY : hex_print.c.i
-
-hex_print.s: hex_print.c.s
-
-.PHONY : hex_print.s
-
-# target to generate assembly for a file
-hex_print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/hex_print.c.s
-.PHONY : hex_print.c.s
+libft/ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strlen.c.s
+.PHONY : libft/ft_strlen.c.s
 
 main.o: main.c.o
 
@@ -467,113 +359,248 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/main.c.s
 .PHONY : main.c.s
 
-print_specifier.o: print_specifier.c.o
+src/ft_c_print.o: src/ft_c_print.c.o
 
-.PHONY : print_specifier.o
-
-# target to build an object file
-print_specifier.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/print_specifier.c.o
-.PHONY : print_specifier.c.o
-
-print_specifier.i: print_specifier.c.i
-
-.PHONY : print_specifier.i
-
-# target to preprocess a source file
-print_specifier.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/print_specifier.c.i
-.PHONY : print_specifier.c.i
-
-print_specifier.s: print_specifier.c.s
-
-.PHONY : print_specifier.s
-
-# target to generate assembly for a file
-print_specifier.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/print_specifier.c.s
-.PHONY : print_specifier.c.s
-
-specifier_parser.o: specifier_parser.c.o
-
-.PHONY : specifier_parser.o
+.PHONY : src/ft_c_print.o
 
 # target to build an object file
-specifier_parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/specifier_parser.c.o
-.PHONY : specifier_parser.c.o
+src/ft_c_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_c_print.c.o
+.PHONY : src/ft_c_print.c.o
 
-specifier_parser.i: specifier_parser.c.i
+src/ft_c_print.i: src/ft_c_print.c.i
 
-.PHONY : specifier_parser.i
+.PHONY : src/ft_c_print.i
 
 # target to preprocess a source file
-specifier_parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/specifier_parser.c.i
-.PHONY : specifier_parser.c.i
+src/ft_c_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_c_print.c.i
+.PHONY : src/ft_c_print.c.i
 
-specifier_parser.s: specifier_parser.c.s
+src/ft_c_print.s: src/ft_c_print.c.s
 
-.PHONY : specifier_parser.s
+.PHONY : src/ft_c_print.s
 
 # target to generate assembly for a file
-specifier_parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/specifier_parser.c.s
-.PHONY : specifier_parser.c.s
+src/ft_c_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_c_print.c.s
+.PHONY : src/ft_c_print.c.s
 
-str_print.o: str_print.c.o
+src/ft_di_print.o: src/ft_di_print.c.o
 
-.PHONY : str_print.o
+.PHONY : src/ft_di_print.o
 
 # target to build an object file
-str_print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/str_print.c.o
-.PHONY : str_print.c.o
+src/ft_di_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_di_print.c.o
+.PHONY : src/ft_di_print.c.o
 
-str_print.i: str_print.c.i
+src/ft_di_print.i: src/ft_di_print.c.i
 
-.PHONY : str_print.i
+.PHONY : src/ft_di_print.i
 
 # target to preprocess a source file
-str_print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/str_print.c.i
-.PHONY : str_print.c.i
+src/ft_di_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_di_print.c.i
+.PHONY : src/ft_di_print.c.i
 
-str_print.s: str_print.c.s
+src/ft_di_print.s: src/ft_di_print.c.s
 
-.PHONY : str_print.s
+.PHONY : src/ft_di_print.s
 
 # target to generate assembly for a file
-str_print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/str_print.c.s
-.PHONY : str_print.c.s
+src/ft_di_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_di_print.c.s
+.PHONY : src/ft_di_print.c.s
 
-upper_hex_print.o: upper_hex_print.c.o
+src/ft_print_specifier.o: src/ft_print_specifier.c.o
 
-.PHONY : upper_hex_print.o
+.PHONY : src/ft_print_specifier.o
 
 # target to build an object file
-upper_hex_print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/upper_hex_print.c.o
-.PHONY : upper_hex_print.c.o
+src/ft_print_specifier.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_print_specifier.c.o
+.PHONY : src/ft_print_specifier.c.o
 
-upper_hex_print.i: upper_hex_print.c.i
+src/ft_print_specifier.i: src/ft_print_specifier.c.i
 
-.PHONY : upper_hex_print.i
+.PHONY : src/ft_print_specifier.i
 
 # target to preprocess a source file
-upper_hex_print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/upper_hex_print.c.i
-.PHONY : upper_hex_print.c.i
+src/ft_print_specifier.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_print_specifier.c.i
+.PHONY : src/ft_print_specifier.c.i
 
-upper_hex_print.s: upper_hex_print.c.s
+src/ft_print_specifier.s: src/ft_print_specifier.c.s
 
-.PHONY : upper_hex_print.s
+.PHONY : src/ft_print_specifier.s
 
 # target to generate assembly for a file
-upper_hex_print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/upper_hex_print.c.s
-.PHONY : upper_hex_print.c.s
+src/ft_print_specifier.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_print_specifier.c.s
+.PHONY : src/ft_print_specifier.c.s
+
+src/ft_printf.o: src/ft_printf.c.o
+
+.PHONY : src/ft_printf.o
+
+# target to build an object file
+src/ft_printf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_printf.c.o
+.PHONY : src/ft_printf.c.o
+
+src/ft_printf.i: src/ft_printf.c.i
+
+.PHONY : src/ft_printf.i
+
+# target to preprocess a source file
+src/ft_printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_printf.c.i
+.PHONY : src/ft_printf.c.i
+
+src/ft_printf.s: src/ft_printf.c.s
+
+.PHONY : src/ft_printf.s
+
+# target to generate assembly for a file
+src/ft_printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_printf.c.s
+.PHONY : src/ft_printf.c.s
+
+src/ft_ptf_putnbr_fd.o: src/ft_ptf_putnbr_fd.c.o
+
+.PHONY : src/ft_ptf_putnbr_fd.o
+
+# target to build an object file
+src/ft_ptf_putnbr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o
+.PHONY : src/ft_ptf_putnbr_fd.c.o
+
+src/ft_ptf_putnbr_fd.i: src/ft_ptf_putnbr_fd.c.i
+
+.PHONY : src/ft_ptf_putnbr_fd.i
+
+# target to preprocess a source file
+src/ft_ptf_putnbr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.i
+.PHONY : src/ft_ptf_putnbr_fd.c.i
+
+src/ft_ptf_putnbr_fd.s: src/ft_ptf_putnbr_fd.c.s
+
+.PHONY : src/ft_ptf_putnbr_fd.s
+
+# target to generate assembly for a file
+src/ft_ptf_putnbr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.s
+.PHONY : src/ft_ptf_putnbr_fd.c.s
+
+src/ft_s_print.o: src/ft_s_print.c.o
+
+.PHONY : src/ft_s_print.o
+
+# target to build an object file
+src/ft_s_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_s_print.c.o
+.PHONY : src/ft_s_print.c.o
+
+src/ft_s_print.i: src/ft_s_print.c.i
+
+.PHONY : src/ft_s_print.i
+
+# target to preprocess a source file
+src/ft_s_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_s_print.c.i
+.PHONY : src/ft_s_print.c.i
+
+src/ft_s_print.s: src/ft_s_print.c.s
+
+.PHONY : src/ft_s_print.s
+
+# target to generate assembly for a file
+src/ft_s_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_s_print.c.s
+.PHONY : src/ft_s_print.c.s
+
+src/ft_specifier_parser.o: src/ft_specifier_parser.c.o
+
+.PHONY : src/ft_specifier_parser.o
+
+# target to build an object file
+src/ft_specifier_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o
+.PHONY : src/ft_specifier_parser.c.o
+
+src/ft_specifier_parser.i: src/ft_specifier_parser.c.i
+
+.PHONY : src/ft_specifier_parser.i
+
+# target to preprocess a source file
+src/ft_specifier_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_specifier_parser.c.i
+.PHONY : src/ft_specifier_parser.c.i
+
+src/ft_specifier_parser.s: src/ft_specifier_parser.c.s
+
+.PHONY : src/ft_specifier_parser.s
+
+# target to generate assembly for a file
+src/ft_specifier_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_specifier_parser.c.s
+.PHONY : src/ft_specifier_parser.c.s
+
+src/ft_upper_x_print.o: src/ft_upper_x_print.c.o
+
+.PHONY : src/ft_upper_x_print.o
+
+# target to build an object file
+src/ft_upper_x_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o
+.PHONY : src/ft_upper_x_print.c.o
+
+src/ft_upper_x_print.i: src/ft_upper_x_print.c.i
+
+.PHONY : src/ft_upper_x_print.i
+
+# target to preprocess a source file
+src/ft_upper_x_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_upper_x_print.c.i
+.PHONY : src/ft_upper_x_print.c.i
+
+src/ft_upper_x_print.s: src/ft_upper_x_print.c.s
+
+.PHONY : src/ft_upper_x_print.s
+
+# target to generate assembly for a file
+src/ft_upper_x_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_upper_x_print.c.s
+.PHONY : src/ft_upper_x_print.c.s
+
+src/ft_x_print.o: src/ft_x_print.c.o
+
+.PHONY : src/ft_x_print.o
+
+# target to build an object file
+src/ft_x_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_x_print.c.o
+.PHONY : src/ft_x_print.c.o
+
+src/ft_x_print.i: src/ft_x_print.c.i
+
+.PHONY : src/ft_x_print.i
+
+# target to preprocess a source file
+src/ft_x_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_x_print.c.i
+.PHONY : src/ft_x_print.c.i
+
+src/ft_x_print.s: src/ft_x_print.c.s
+
+.PHONY : src/ft_x_print.s
+
+# target to generate assembly for a file
+src/ft_x_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_x_print.c.s
+.PHONY : src/ft_x_print.c.s
 
 # Help Target
 help:
@@ -584,54 +611,57 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ptf"
-	@echo "... char_print.o"
-	@echo "... char_print.i"
-	@echo "... char_print.s"
-	@echo "... di_print.o"
-	@echo "... di_print.i"
-	@echo "... di_print.s"
-	@echo "... ft_isdigit.o"
-	@echo "... ft_isdigit.i"
-	@echo "... ft_isdigit.s"
-	@echo "... ft_itoa.o"
-	@echo "... ft_itoa.i"
-	@echo "... ft_itoa.s"
-	@echo "... ft_printf.o"
-	@echo "... ft_printf.i"
-	@echo "... ft_printf.s"
-	@echo "... ft_putchar_fd.o"
-	@echo "... ft_putchar_fd.i"
-	@echo "... ft_putchar_fd.s"
-	@echo "... ft_putnbr_fd.o"
-	@echo "... ft_putnbr_fd.i"
-	@echo "... ft_putnbr_fd.s"
-	@echo "... ft_putstr_fd.o"
-	@echo "... ft_putstr_fd.i"
-	@echo "... ft_putstr_fd.s"
-	@echo "... ft_strchr.o"
-	@echo "... ft_strchr.i"
-	@echo "... ft_strchr.s"
-	@echo "... ft_strlen.o"
-	@echo "... ft_strlen.i"
-	@echo "... ft_strlen.s"
-	@echo "... hex_print.o"
-	@echo "... hex_print.i"
-	@echo "... hex_print.s"
+	@echo "... libft/ft_bzero.o"
+	@echo "... libft/ft_bzero.i"
+	@echo "... libft/ft_bzero.s"
+	@echo "... libft/ft_isdigit.o"
+	@echo "... libft/ft_isdigit.i"
+	@echo "... libft/ft_isdigit.s"
+	@echo "... libft/ft_memset.o"
+	@echo "... libft/ft_memset.i"
+	@echo "... libft/ft_memset.s"
+	@echo "... libft/ft_putchar_fd.o"
+	@echo "... libft/ft_putchar_fd.i"
+	@echo "... libft/ft_putchar_fd.s"
+	@echo "... libft/ft_putstr_fd.o"
+	@echo "... libft/ft_putstr_fd.i"
+	@echo "... libft/ft_putstr_fd.s"
+	@echo "... libft/ft_strchr.o"
+	@echo "... libft/ft_strchr.i"
+	@echo "... libft/ft_strchr.s"
+	@echo "... libft/ft_strlen.o"
+	@echo "... libft/ft_strlen.i"
+	@echo "... libft/ft_strlen.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... print_specifier.o"
-	@echo "... print_specifier.i"
-	@echo "... print_specifier.s"
-	@echo "... specifier_parser.o"
-	@echo "... specifier_parser.i"
-	@echo "... specifier_parser.s"
-	@echo "... str_print.o"
-	@echo "... str_print.i"
-	@echo "... str_print.s"
-	@echo "... upper_hex_print.o"
-	@echo "... upper_hex_print.i"
-	@echo "... upper_hex_print.s"
+	@echo "... src/ft_c_print.o"
+	@echo "... src/ft_c_print.i"
+	@echo "... src/ft_c_print.s"
+	@echo "... src/ft_di_print.o"
+	@echo "... src/ft_di_print.i"
+	@echo "... src/ft_di_print.s"
+	@echo "... src/ft_print_specifier.o"
+	@echo "... src/ft_print_specifier.i"
+	@echo "... src/ft_print_specifier.s"
+	@echo "... src/ft_printf.o"
+	@echo "... src/ft_printf.i"
+	@echo "... src/ft_printf.s"
+	@echo "... src/ft_ptf_putnbr_fd.o"
+	@echo "... src/ft_ptf_putnbr_fd.i"
+	@echo "... src/ft_ptf_putnbr_fd.s"
+	@echo "... src/ft_s_print.o"
+	@echo "... src/ft_s_print.i"
+	@echo "... src/ft_s_print.s"
+	@echo "... src/ft_specifier_parser.o"
+	@echo "... src/ft_specifier_parser.i"
+	@echo "... src/ft_specifier_parser.s"
+	@echo "... src/ft_upper_x_print.o"
+	@echo "... src/ft_upper_x_print.i"
+	@echo "... src/ft_upper_x_print.s"
+	@echo "... src/ft_x_print.o"
+	@echo "... src/ft_x_print.i"
+	@echo "... src/ft_x_print.s"
 .PHONY : help
 
 
