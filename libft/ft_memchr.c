@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:30:30 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:29 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:02:56 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 void	*ft_memchr(const void *a, int c, size_t n)
 {

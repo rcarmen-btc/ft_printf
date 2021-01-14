@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:30:58 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:41 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:03:18 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {

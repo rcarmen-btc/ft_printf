@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "libft.h"
-#include "ft_printf.h"
+#include "./includes/ft_printf.h"
 
 //int main()
 //{
@@ -17,5 +17,5 @@
 //}
 int main()
 {
-	ft_printf("%-3d\n", -3);
+    ft_printf("|%0*.*d|\n", 4, -2, 8);
 }

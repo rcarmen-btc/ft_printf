@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 23:05:18 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:18 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:02:35 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 int			ft_isspace(char c)
 {

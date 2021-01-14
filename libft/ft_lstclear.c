@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 13:20:14 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:22 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:02:44 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 void		ft_lstclear(t_list **lst, void (*del)(void	*))
 {

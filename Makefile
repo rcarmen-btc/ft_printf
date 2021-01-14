@@ -8,12 +8,7 @@ SRC_FILE = ./src/
 
 OBJ_FILE = ./
 
-INCLUDE = ./ft_printf.h
-
-#SRC = ./src/*.c ./libft/*.c
-
-#OBJ = ./*.o
-
+INCLUDE = ./includes/ft_printf.h
 
 SRC = $(SRC_FILE)ft_printf.c \
 	$(SRC_FILE)ft_specifier_parser.c \
@@ -24,7 +19,6 @@ SRC = $(SRC_FILE)ft_printf.c \
 	$(SRC_FILE)ft_s_print.c \
 	$(SRC_FILE)ft_c_print.c \
 	$(SRC_FILE)ft_ptf_putnbr_fd.c \
-
 
 OBJ = $(OBJ_FILE)ft_printf.o \
 	$(OBJ_FILE)ft_specifier_parser.o \
@@ -42,7 +36,7 @@ $(NAME): $(SRC) $(INCLUDE)
 	$(MAKE) -C ./libft re
 	mv ./libft/libft.a .
 	mv libft.a libftprintf.a
-	$(CC) -g3 $(FLAGS) $(SRC)
+	$(CC) $(FLAGS) $(SRC)
 	ar rcs $(NAME) $(OBJ)
 
 clean:
@@ -54,3 +48,5 @@ fclean:	clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY:		all clean fclean re

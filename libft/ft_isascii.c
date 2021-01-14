@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:41 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:25:03 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:02:28 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 int		ft_isascii(int c)
 {

@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:31:22 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:46 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:03:28 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:00:17 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 21:24:43 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:02:25 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

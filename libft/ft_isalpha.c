@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:38 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:07 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:02:23 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 int		ft_isalpha(int c)
 {

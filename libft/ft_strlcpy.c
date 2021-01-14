@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:31:00 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:42 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:03:20 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 size_t		ft_strlcpy(char *dst, const char *src, size_t size)
 {

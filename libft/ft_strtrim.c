@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:31:24 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:47 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:03:30 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 static size_t		get_head(char const *str, char const *set)
 {

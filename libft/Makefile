@@ -6,7 +6,7 @@
 #    By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/03 16:32:18 by rcarmen           #+#    #+#              #
-#    Updated: 2021/01/13 05:25:50 by rcarmen          ###   ########.fr        #
+#    Updated: 2021/01/14 18:15:45 by rcarmen          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 FLAGS = -Wall -Wextra -Werror
 
-INCLUDE = ./include/libft.h
+INCLUDE = ./libft.h
 
 SRC = ft_isalnum.c ft_memcmp.c ft_memmove.c ft_memset.c\
 	ft_atoi.c ft_strlcpy.c ft_strchr.c ft_strlcat.c ft_strtrim.c\
@@ -38,10 +38,10 @@ $(NAME): $(OBJ) $(INCLUDE)
  
 so:
 	gcc -fPIC -c ${SRC_BONUS}
-	gcc -shared -Wl,-soname,libft.so -o libft.so *.o
+	gcc -shared -Wl,-soname,libft.so -o libft.so $(OBJ)
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)

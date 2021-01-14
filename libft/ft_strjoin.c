@@ -6,11 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:30:55 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/13 02:24:40 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/14 18:03:17 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 char		*ft_strjoin(char const *s1, char const *s2)
 {
