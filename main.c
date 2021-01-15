@@ -22,7 +22,8 @@ int main()
     //char *c = NULL;
     //write(1, c, 1);
     //ft_printf("1:Hello |%.3s|\n", NULL);
-    ft_printf("%d\n", ft_printf("%.2s", "Mundo"));
+    int i = ft_printf("%s", "f");
+    printf("%d\n", i);
     //ft_printf("|%s|", "Hello");
     //printf("%s\n", NULL);
 }

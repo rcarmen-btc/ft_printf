@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/15 23:21:00 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/16 02:41:51 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,20 @@ static void			flag_influence(t_specs *stuff, int pl, int sl, char *s)
 	if (stuff->flag != minus)
 		while (sl--)
 			set_lenth_put_char(stuff, ' ', 1);
-	if (s != NULL)
-		ptf_putnstr_fd(s, pl, 1);
+	if (s != NULL || !IS_LINUX)
+	{
+		if (stuff->precision < 0)
+		{
+			stuff->full_lenth += NULL_SIZE;
+			ptf_putnstr_fd("(null)", NULL_SIZE, 1);
+		}
+		else
+		{
+			stuff->full_lenth += pl;
+			ptf_putnstr_fd(s, pl, 1);
+		}
+
+	}
 	if (stuff->flag == minus)
 		while (sl--)
 			set_lenth_put_char(stuff, ' ', 1);
@@ -44,13 +56,14 @@ static void			null_case(t_specs *stuff)
 	int				prt_len;
 
 	spc_len = stuff->width - NULL_SIZE;
-	if (stuff->point != NULL && stuff->precision < NULL_SIZE)
+	if (spc_len < 0)
+		spc_len = 0;
+	if (stuff->point != NULL && stuff->precision < NULL_SIZE &&
+		stuff->precision >= 0)
 		prt_len = stuff->precision;
 	else
 		prt_len = NULL_SIZE;
 	if (!IS_LINUX && (spc_len = stuff->width - prt_len) < 0)
-		prt_len = 0;
-	if (spc_len < 0)
 		spc_len = 0;
 	if (IS_LINUX)
 	{
@@ -89,7 +102,6 @@ void				ft_s_print(t_specs *stuff)
 	}
 	else
 		prt_len = str_len;
-	stuff->full_lenth += prt_len;
 	if ((spc_len = stuff->width - prt_len) < 0)
 		spc_len = 0;
 	flag_influence(stuff, prt_len, spc_len, str);
