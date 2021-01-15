@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 02:42:51 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/16 02:46:51 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <unistd.h>
 
 # ifndef IS_LINUX
-#  define IS_LINUX 1
+#  define IS_LINUX 0
 # endif
 
 # ifndef NULL_SIZE
