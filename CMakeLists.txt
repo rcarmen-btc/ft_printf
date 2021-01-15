@@ -6,22 +6,23 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(ptf
-        srcs/ft_printf.c
-        ft_printf.h
+        src/ft_point_detector.c
+        src/ft_printf.c
+        includes/ft_printf.h
         libft/ft_putchar_fd.c
         libft/ft_putstr_fd.c
         libft/ft_strlen.c
         libft.h
         main.c
-        srcs/ft_specifier_parser.c
+        src/ft_specifier_parser.c
         libft/ft_strchr.c
         libft/ft_isdigit.c
-        srcs/ft_print_specifier.c
-        srcs/ft_c_print.c
-        srcs/ft_x_print.c
-        srcs/ft_s_print.c
-        srcs/ft_upper_x_print.c
-        srcs/ft_di_print.c
-        srcs/ft_ptf_putnbr_fd.c
+        src/ft_print_specifier.c
+        src/ft_c_print.c
+        src/ft_x_print.c
+        src/ft_s_print.c
+        src/ft_upper_x_print.c
+        src/ft_di_print.c
+        src/ft_ptf_putnbr_fd.c
         libft/ft_bzero.c
         libft/ft_memset.c)

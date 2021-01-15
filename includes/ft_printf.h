@@ -1,11 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
+/*   Updated: 2021/01/15 23:23:38 by rcarmen          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-#include <stdio.h>
+
+# include <stdio.h>
 # include <stdlib.h>
 # include <stdarg.h>
 # include <unistd.h>
 
-typedef enum		e_type_mods
+# ifndef IS_LINUX
+#  define IS_LINUX 1
+# endif
+
+# ifndef NULL_SIZE
+#  define NULL_SIZE 6
+# endif
+
+typedef enum	e_type_mods
 {
 	no_type = 0b00000000,
 	character = 0b00000001,
@@ -15,16 +36,16 @@ typedef enum		e_type_mods
 	unsig = 0b00010000,
 	hex = 0b00100000,
 	upper_hex = 0b01000000
-}					t_type_mods;
+}				t_type_mods;
 
-typedef enum 		e_flags
+typedef enum	e_flags
 {
 	none = 0b00000000,
 	zero = 0b00000001,
 	minus = 0b00000010,
 	space = 0b00000100,
 	sharp = 0b00001000
-}					t_flags;
+}				t_flags;
 
 typedef struct		s_specs
 {
@@ -33,10 +54,10 @@ typedef struct		s_specs
 	int				precision;
 	char			type;
 	va_list			f_varg;
-	const char 		*f_str;
-	char 			*point;
-	unsigned int 	full_lenth;
-} 					t_specs;
+	const char		*f_str;
+	char			*point;
+	unsigned int	full_lenth;
+}					t_specs;
 
 int					ft_printf(const char *s, ...);
 void				ft_ptf_putnbr_fd(int n, int fd);
@@ -46,6 +67,7 @@ void				ft_specifier_parser(t_specs *stuff);
 void				ft_c_print(t_specs *stuff);
 void				ft_s_print(t_specs *stuff);
 void				ft_x_print(t_specs *stuff);
-void 				ft_upper_x_print(t_specs *stuff);
+void				ft_upper_x_print(t_specs *stuff);
+char				*ft_point_detector(char *s);
 
 #endif

@@ -413,6 +413,33 @@ src/ft_di_print.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_di_print.c.s
 .PHONY : src/ft_di_print.c.s
 
+src/ft_point_detector.o: src/ft_point_detector.c.o
+
+.PHONY : src/ft_point_detector.o
+
+# target to build an object file
+src/ft_point_detector.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_point_detector.c.o
+.PHONY : src/ft_point_detector.c.o
+
+src/ft_point_detector.i: src/ft_point_detector.c.i
+
+.PHONY : src/ft_point_detector.i
+
+# target to preprocess a source file
+src/ft_point_detector.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_point_detector.c.i
+.PHONY : src/ft_point_detector.c.i
+
+src/ft_point_detector.s: src/ft_point_detector.c.s
+
+.PHONY : src/ft_point_detector.s
+
+# target to generate assembly for a file
+src/ft_point_detector.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_point_detector.c.s
+.PHONY : src/ft_point_detector.c.s
+
 src/ft_print_specifier.o: src/ft_print_specifier.c.o
 
 .PHONY : src/ft_print_specifier.o
@@ -641,6 +668,9 @@ help:
 	@echo "... src/ft_di_print.o"
 	@echo "... src/ft_di_print.i"
 	@echo "... src/ft_di_print.s"
+	@echo "... src/ft_point_detector.o"
+	@echo "... src/ft_point_detector.i"
+	@echo "... src/ft_point_detector.s"
 	@echo "... src/ft_print_specifier.o"
 	@echo "... src/ft_print_specifier.i"
 	@echo "... src/ft_print_specifier.s"

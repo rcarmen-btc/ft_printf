@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ptf.dir/main.c.o"
   "CMakeFiles/ptf.dir/src/ft_c_print.c.o"
   "CMakeFiles/ptf.dir/src/ft_di_print.c.o"
+  "CMakeFiles/ptf.dir/src/ft_point_detector.c.o"
   "CMakeFiles/ptf.dir/src/ft_print_specifier.c.o"
   "CMakeFiles/ptf.dir/src/ft_printf.c.o"
   "CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o"

@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rcarmen/school42/ptf/ft_printf.h">
+		<Unit filename="/home/rcarmen/school42/ptf/includes/ft_printf.h">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/libft.h">
@@ -115,6 +115,9 @@
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/src/ft_di_print.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/src/ft_point_detector.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/src/ft_print_specifier.c">

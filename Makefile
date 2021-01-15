@@ -10,25 +10,27 @@ OBJ_FILE = ./
 
 INCLUDE = ./includes/ft_printf.h
 
-SRC = $(SRC_FILE)ft_printf.c \
-	$(SRC_FILE)ft_specifier_parser.c \
-	$(SRC_FILE)ft_di_print.c \
-	$(SRC_FILE)ft_x_print.c \
-	$(SRC_FILE)ft_upper_x_print.c \
-	$(SRC_FILE)ft_print_specifier.c \
-	$(SRC_FILE)ft_s_print.c \
-	$(SRC_FILE)ft_c_print.c \
-	$(SRC_FILE)ft_ptf_putnbr_fd.c \
+SRC = $(SRC_FILE)ft_printf.c\
+	$(SRC_FILE)ft_specifier_parser.c\
+	$(SRC_FILE)ft_di_print.c\
+	$(SRC_FILE)ft_x_print.c\
+	$(SRC_FILE)ft_upper_x_print.c\
+	$(SRC_FILE)ft_print_specifier.c\
+	$(SRC_FILE)ft_s_print.c\
+	$(SRC_FILE)ft_c_print.c\
+	$(SRC_FILE)ft_ptf_putnbr_fd.c\
+	$(SRC_FILE)ft_point_detector.c\
 
-OBJ = $(OBJ_FILE)ft_printf.o \
-	$(OBJ_FILE)ft_specifier_parser.o \
-	$(OBJ_FILE)ft_di_print.o \
-	$(OBJ_FILE)ft_x_print.o \
-	$(OBJ_FILE)ft_upper_x_print.o \
-	$(OBJ_FILE)ft_print_specifier.o \
-	$(OBJ_FILE)ft_s_print.o \
-	$(OBJ_FILE)ft_c_print.o \
-	$(OBJ_FILE)ft_ptf_putnbr_fd.o \
+OBJ = $(OBJ_FILE)ft_printf.o\
+	$(OBJ_FILE)ft_specifier_parser.o\
+	$(OBJ_FILE)ft_di_print.o\
+	$(OBJ_FILE)ft_x_print.o\
+	$(OBJ_FILE)ft_upper_x_print.o\
+	$(OBJ_FILE)ft_print_specifier.o\
+	$(OBJ_FILE)ft_s_print.o\
+	$(OBJ_FILE)ft_c_print.o\
+	$(OBJ_FILE)ft_ptf_putnbr_fd.o\
+	$(OBJ_FILE)ft_point_detector.o\
 
 all: $(NAME)
 
@@ -42,7 +44,6 @@ $(NAME): $(SRC) $(INCLUDE)
 clean:
 	$(MAKE) -C ./libft clean
 	rm -f $(OBJ)
-
 
 fclean:	clean
 	rm -f $(NAME)

@@ -1,35 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_c_print.c                                       :+:      :+:    :+:   */
+/*   ft_point_detector.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/14 22:01:09 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/15 22:53:49 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft/libft.h"
 #include "../includes/ft_printf.h"
 
-static void			set_lenth_put_char(t_specs *stuff, const char c, int fd)
+static int		iteration_condition(char c)
 {
-	ft_putchar_fd(c, fd);
-	stuff->full_lenth++;
+	if (c == 'c')
+		return (0);
+	else if (c == 's')
+		return (0);
+	else if (c == 'd')
+		return (0);
+	else if (c == 'i')
+		return (0);
+	else if (c == 'u')
+		return (0);
+	else if (c == 'x')
+		return (0);
+	else if (c == 'X')
+		return (0);
+	else if (c == '%')
+		return (0);
+	return (1);
 }
 
-void				ft_c_print(t_specs *stuff)
+char			*ft_point_detector(char *s)
 {
-	int				c;
+	int			i;
 
-	c = va_arg(stuff->f_varg, int);
-	if (stuff->flag == none || (stuff->flag == zero &&
-		stuff->flag != (zero | minus)))
-		while (stuff->width-- > 1)
-			set_lenth_put_char(stuff, ' ', 1);
-	set_lenth_put_char(stuff, c, 1);
-	if (stuff->flag == minus || stuff->flag == (minus | zero))
-		while (stuff->width-- > 1)
-			set_lenth_put_char(stuff, ' ', 1);
+	i = 0;
+	while (*(s + i) != '\0' && iteration_condition(*(s + i)))
+	{
+		if (*(s + i) == '.')
+			return ((char *)(s + i));
+		i++;
+	}
+	return ((char *)NULL);
 }

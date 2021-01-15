@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/14 18:11:31 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/15 22:57:12 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ void				ft_specifier_parser(t_specs *stuff)
 	int				type_detector_return;
 
 	stuff->f_str++;
-	stuff->point = ft_strchr(stuff->f_str, '.');
+	stuff->point = ft_point_detector((char *)stuff->f_str);
 	stuff->precision = 0;
 	while (*(stuff->f_str) && (type_detector_return = type_detector(stuff)) &&
 		type_detector_return != -1)
