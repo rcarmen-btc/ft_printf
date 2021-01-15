@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 02:46:51 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/16 02:49:44 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ typedef enum	e_type_mods
 	integer = 0b00001000,
 	unsig = 0b00010000,
 	hex = 0b00100000,
-	upper_hex = 0b01000000
+	upper_hex = 0b01000000,
+	percent = 0b10000000
 }				t_type_mods;
 
 typedef enum	e_flags
