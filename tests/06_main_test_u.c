@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/19 22:11:54 by epuclla           #+#    #+#             */
-/*   Updated: 2021/01/14 20:12:31 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/16 12:49:53 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,15 @@ int main()
 	ft_printf(" LENGTH printf    : %d\n", ft_printf("|%05x|", 43));
    	printf(" LENGTH printf    : %d\n\n", printf("|%05x|", 43));*/
 
-	ft_printf("|%*.-5u|\n", 453);
-	//printf("|%*.-5u|\n\n", 453);
-
-	ft_printf("|%p|\n", NULL);
+	//ft_printf("|%p|\n", NULL);
 	//printf("|%p|\n", NULL);
 
-	ft_printf("|%5p|\n", 0);
+	//ft_printf("|%5p|\n", 0);
 	//printf("|%5pu|\n", 0);
     //printf("|%s|\n", "_ _ _");
 
 	ft_printf("|%08.5u|\n", 34);
-	//printf("|%08.5u|\n", 34);
+	printf("|%08.5u|\n", 34);
 
 	ft_printf("|%-1u|\n", 34);
 

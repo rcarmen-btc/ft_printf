@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 02:49:44 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/16 12:44:33 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ typedef enum	e_type_mods
 	unsig = 0b00010000,
 	hex = 0b00100000,
 	upper_hex = 0b01000000,
-	percent = 0b10000000
+	percent = 0b00000011
 }				t_type_mods;
 
 typedef enum	e_flags
@@ -61,6 +61,8 @@ typedef struct		s_specs
 }					t_specs;
 
 int					ft_printf(const char *s, ...);
+void				ft_perc_print(t_specs *stuff);
+void				ft_u_ptf_putnbr_fd(unsigned int n, int fd);
 void				ft_ptf_putnbr_fd(int n, int fd);
 void				ft_di_print(t_specs *buff);
 int					ft_print_specifier(t_specs *stuff);
@@ -68,6 +70,7 @@ void				ft_specifier_parser(t_specs *stuff);
 void				ft_c_print(t_specs *stuff);
 void				ft_s_print(t_specs *stuff);
 void				ft_x_print(t_specs *stuff);
+void				ft_u_print(t_specs *stuff);
 void				ft_upper_x_print(t_specs *stuff);
 char				*ft_point_detector(char *s);
 
