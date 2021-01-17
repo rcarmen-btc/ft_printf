@@ -6,12 +6,11 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 12:19:43 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/17 19:08:21 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int			ft_print_specifier(t_specs *stuff)
 {
@@ -27,6 +26,8 @@ int			ft_print_specifier(t_specs *stuff)
 		ft_upper_x_print(stuff);
 	else if (stuff->type == unsig)
 		ft_u_print(stuff);
+	else if (stuff->type == pointer)
+		ft_p_print(stuff);
 	else if (stuff->type == percent)
 		ft_perc_print(stuff);
 	return (0);

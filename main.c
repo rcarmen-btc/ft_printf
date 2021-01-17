@@ -4,6 +4,7 @@
 //#include "libft.h"
 #include "./includes/ft_printf.h"
 
+char	*ft_itoa_base(int value, int base);
 //int main()
 //{
 //	char *tst = "%-0*.*i";
@@ -21,8 +22,15 @@ int main()
     //printf("1:%3s\n", "HelloWorld");
     //char *c = NULL;
     //write(1, c, 1);
-    //ft_printf("1:Hello |%.3s|\n", NULL);
-    int i = printf("%.-2u", 23);
+    int b;
+    b = 23;
+    int *p = &b;
+    //ft_printf("Hello |%p|\n", p);
+    ft_printf("%p\n", NULL);
+    printf("%p\n", NULL);
+    //printf("Hello |%-4.3x|\n", 32);
+    //	ft_itoa_base(-19, 3);
+    //ft_printf("%s\n", ft_itoa_base(-23, 10));
     //printf("%d\n", i);
     //ft_printf("|%s|", "Hello");
     //printf("%s\n", NULL);

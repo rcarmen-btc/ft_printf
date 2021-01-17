@@ -6,12 +6,12 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 02:53:31 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/17 17:41:46 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
-#include "../includes/ft_printf.h"
+#include "libft.h"
+#include "ft_printf.h"
 
 static void			set_lenth_put_char(t_specs *stuff, const char c, int fd)
 {

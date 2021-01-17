@@ -81,13 +81,13 @@
 		<Unit filename="/home/rcarmen/school42/ptf/includes/ft_printf.h">
 			<Option target="ptf"/>
 		</Unit>
-		<Unit filename="/home/rcarmen/school42/ptf/libft.h">
-			<Option target="ptf"/>
-		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/libft/ft_bzero.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/libft/ft_isdigit.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/libft/ft_itoa_base.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/libft/ft_memset.c">
@@ -108,6 +108,9 @@
 		<Unit filename="/home/rcarmen/school42/ptf/libft/ft_strlen.c">
 			<Option target="ptf"/>
 		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/libft/libft.h">
+			<Option target="ptf"/>
+		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/main.c">
 			<Option target="ptf"/>
 		</Unit>
@@ -115,6 +118,9 @@
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/src/ft_di_print.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/src/ft_perc_print.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/src/ft_point_detector.c">
@@ -133,6 +139,12 @@
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/src/ft_specifier_parser.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/src/ft_u_print.c">
+			<Option target="ptf"/>
+		</Unit>
+		<Unit filename="/home/rcarmen/school42/ptf/src/ft_u_ptf_putnbr_fd.c">
 			<Option target="ptf"/>
 		</Unit>
 		<Unit filename="/home/rcarmen/school42/ptf/src/ft_upper_x_print.c">

@@ -6,12 +6,12 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 02:37:38 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/16 21:01:40 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
-#include "../includes/ft_printf.h"
+#include "libft.h"
+#include "ft_printf.h"
 
 int				ft_printf(const char *f_str, ...)
 {

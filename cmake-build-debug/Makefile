@@ -197,6 +197,33 @@ libft/ft_isdigit.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
 
+libft/ft_itoa_base.o: libft/ft_itoa_base.c.o
+
+.PHONY : libft/ft_itoa_base.o
+
+# target to build an object file
+libft/ft_itoa_base.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_itoa_base.c.o
+.PHONY : libft/ft_itoa_base.c.o
+
+libft/ft_itoa_base.i: libft/ft_itoa_base.c.i
+
+.PHONY : libft/ft_itoa_base.i
+
+# target to preprocess a source file
+libft/ft_itoa_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_itoa_base.c.i
+.PHONY : libft/ft_itoa_base.c.i
+
+libft/ft_itoa_base.s: libft/ft_itoa_base.c.s
+
+.PHONY : libft/ft_itoa_base.s
+
+# target to generate assembly for a file
+libft/ft_itoa_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_itoa_base.c.s
+.PHONY : libft/ft_itoa_base.c.s
+
 libft/ft_memset.o: libft/ft_memset.c.o
 
 .PHONY : libft/ft_memset.o
@@ -413,6 +440,33 @@ src/ft_di_print.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_di_print.c.s
 .PHONY : src/ft_di_print.c.s
 
+src/ft_perc_print.o: src/ft_perc_print.c.o
+
+.PHONY : src/ft_perc_print.o
+
+# target to build an object file
+src/ft_perc_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_perc_print.c.o
+.PHONY : src/ft_perc_print.c.o
+
+src/ft_perc_print.i: src/ft_perc_print.c.i
+
+.PHONY : src/ft_perc_print.i
+
+# target to preprocess a source file
+src/ft_perc_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_perc_print.c.i
+.PHONY : src/ft_perc_print.c.i
+
+src/ft_perc_print.s: src/ft_perc_print.c.s
+
+.PHONY : src/ft_perc_print.s
+
+# target to generate assembly for a file
+src/ft_perc_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_perc_print.c.s
+.PHONY : src/ft_perc_print.c.s
+
 src/ft_point_detector.o: src/ft_point_detector.c.o
 
 .PHONY : src/ft_point_detector.o
@@ -575,6 +629,60 @@ src/ft_specifier_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_specifier_parser.c.s
 .PHONY : src/ft_specifier_parser.c.s
 
+src/ft_u_print.o: src/ft_u_print.c.o
+
+.PHONY : src/ft_u_print.o
+
+# target to build an object file
+src/ft_u_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_u_print.c.o
+.PHONY : src/ft_u_print.c.o
+
+src/ft_u_print.i: src/ft_u_print.c.i
+
+.PHONY : src/ft_u_print.i
+
+# target to preprocess a source file
+src/ft_u_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_u_print.c.i
+.PHONY : src/ft_u_print.c.i
+
+src/ft_u_print.s: src/ft_u_print.c.s
+
+.PHONY : src/ft_u_print.s
+
+# target to generate assembly for a file
+src/ft_u_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_u_print.c.s
+.PHONY : src/ft_u_print.c.s
+
+src/ft_u_ptf_putnbr_fd.o: src/ft_u_ptf_putnbr_fd.c.o
+
+.PHONY : src/ft_u_ptf_putnbr_fd.o
+
+# target to build an object file
+src/ft_u_ptf_putnbr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_u_ptf_putnbr_fd.c.o
+.PHONY : src/ft_u_ptf_putnbr_fd.c.o
+
+src/ft_u_ptf_putnbr_fd.i: src/ft_u_ptf_putnbr_fd.c.i
+
+.PHONY : src/ft_u_ptf_putnbr_fd.i
+
+# target to preprocess a source file
+src/ft_u_ptf_putnbr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_u_ptf_putnbr_fd.c.i
+.PHONY : src/ft_u_ptf_putnbr_fd.c.i
+
+src/ft_u_ptf_putnbr_fd.s: src/ft_u_ptf_putnbr_fd.c.s
+
+.PHONY : src/ft_u_ptf_putnbr_fd.s
+
+# target to generate assembly for a file
+src/ft_u_ptf_putnbr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_u_ptf_putnbr_fd.c.s
+.PHONY : src/ft_u_ptf_putnbr_fd.c.s
+
 src/ft_upper_x_print.o: src/ft_upper_x_print.c.o
 
 .PHONY : src/ft_upper_x_print.o
@@ -644,6 +752,9 @@ help:
 	@echo "... libft/ft_isdigit.o"
 	@echo "... libft/ft_isdigit.i"
 	@echo "... libft/ft_isdigit.s"
+	@echo "... libft/ft_itoa_base.o"
+	@echo "... libft/ft_itoa_base.i"
+	@echo "... libft/ft_itoa_base.s"
 	@echo "... libft/ft_memset.o"
 	@echo "... libft/ft_memset.i"
 	@echo "... libft/ft_memset.s"
@@ -668,6 +779,9 @@ help:
 	@echo "... src/ft_di_print.o"
 	@echo "... src/ft_di_print.i"
 	@echo "... src/ft_di_print.s"
+	@echo "... src/ft_perc_print.o"
+	@echo "... src/ft_perc_print.i"
+	@echo "... src/ft_perc_print.s"
 	@echo "... src/ft_point_detector.o"
 	@echo "... src/ft_point_detector.i"
 	@echo "... src/ft_point_detector.s"
@@ -686,6 +800,12 @@ help:
 	@echo "... src/ft_specifier_parser.o"
 	@echo "... src/ft_specifier_parser.i"
 	@echo "... src/ft_specifier_parser.s"
+	@echo "... src/ft_u_print.o"
+	@echo "... src/ft_u_print.i"
+	@echo "... src/ft_u_print.s"
+	@echo "... src/ft_u_ptf_putnbr_fd.o"
+	@echo "... src/ft_u_ptf_putnbr_fd.i"
+	@echo "... src/ft_u_ptf_putnbr_fd.s"
 	@echo "... src/ft_upper_x_print.o"
 	@echo "... src/ft_upper_x_print.i"
 	@echo "... src/ft_upper_x_print.s"

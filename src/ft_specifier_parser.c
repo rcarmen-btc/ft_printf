@@ -6,12 +6,12 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 11:44:16 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/17 19:56:58 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
-#include "../includes/ft_printf.h"
+#include "libft.h"
+#include "ft_printf.h"
 
 static void			flag_detector(t_specs *stuff)
 {
@@ -76,6 +76,8 @@ static int			type_detector(t_specs *stuff)
 		stuff->type = unsig;
 	else if (*(stuff->f_str) == 'x')
 		stuff->type = hex;
+	else if (*(stuff->f_str) == 'p')
+		stuff->type = pointer;
 	else if (*(stuff->f_str) == 'X')
 		stuff->type = upper_hex;
 	else if (*(stuff->f_str) == '%')

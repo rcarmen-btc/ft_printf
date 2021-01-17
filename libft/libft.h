@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcarmen <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2020/12/28 12:42:53 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/17 22:37:27 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void				*ft_calloc(size_t nmemb, size_t size);
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void				*ft_memchr(const void *a, int c, size_t n);
 int					ft_isspace(char c);
+char				*ft_atoi_base(long int nbr, int base);
 int					ft_isalnum(int c);
 int					ft_atoi(const char *np);
 int					ft_isalpha(int c);
@@ -45,6 +46,7 @@ void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_putchar_fd(char c, int fd);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char				*ft_itoa_base(unsigned long value, int base, int up_low);
 char				*ft_itoa(int n);
 char				*ft_strchr(const void *s, int c);
 char				*ft_strdup(const char *str);
