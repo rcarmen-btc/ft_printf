@@ -26,32 +26,54 @@ CMakeFiles/ptf.dir/libft/ft_strchr.c.o: ../libft/libft.h
 CMakeFiles/ptf.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
 CMakeFiles/ptf.dir/libft/ft_strlen.c.o: ../libft/libft.h
 
-CMakeFiles/ptf.dir/main.c.o: ../includes/ft_printf.h
+CMakeFiles/ptf.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
+CMakeFiles/ptf.dir/libft/ft_strncmp.c.o: ../libft/libft.h
+
+CMakeFiles/ptf.dir/main.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/main.c.o: ../libft.h
 CMakeFiles/ptf.dir/main.c.o: ../main.c
 
 CMakeFiles/ptf.dir/src/ft_c_print.c.o: ../src/ft_c_print.c
 
 CMakeFiles/ptf.dir/src/ft_di_print.c.o: ../src/ft_di_print.c
 
+CMakeFiles/ptf.dir/src/ft_p_print.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/src/ft_p_print.c.o: ../libft.h
+CMakeFiles/ptf.dir/src/ft_p_print.c.o: ../src/ft_p_print.c
+
+CMakeFiles/ptf.dir/src/ft_perc_print.c.o: ../ft_printf.h
 CMakeFiles/ptf.dir/src/ft_perc_print.c.o: ../src/ft_perc_print.c
 
 CMakeFiles/ptf.dir/src/ft_point_detector.c.o: ../src/ft_point_detector.c
 
+CMakeFiles/ptf.dir/src/ft_print_specifier.c.o: ../ft_printf.h
 CMakeFiles/ptf.dir/src/ft_print_specifier.c.o: ../src/ft_print_specifier.c
 
 CMakeFiles/ptf.dir/src/ft_printf.c.o: ../src/ft_printf.c
 
+CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o: ../libft.h
 CMakeFiles/ptf.dir/src/ft_ptf_putnbr_fd.c.o: ../src/ft_ptf_putnbr_fd.c
 
 CMakeFiles/ptf.dir/src/ft_s_print.c.o: ../src/ft_s_print.c
 
+CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o: ../libft.h
 CMakeFiles/ptf.dir/src/ft_specifier_parser.c.o: ../src/ft_specifier_parser.c
 
+CMakeFiles/ptf.dir/src/ft_u_print.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/src/ft_u_print.c.o: ../libft.h
 CMakeFiles/ptf.dir/src/ft_u_print.c.o: ../src/ft_u_print.c
 
+CMakeFiles/ptf.dir/src/ft_u_ptf_putnbr_fd.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/src/ft_u_ptf_putnbr_fd.c.o: ../libft.h
 CMakeFiles/ptf.dir/src/ft_u_ptf_putnbr_fd.c.o: ../src/ft_u_ptf_putnbr_fd.c
 
+CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o: ../libft.h
 CMakeFiles/ptf.dir/src/ft_upper_x_print.c.o: ../src/ft_upper_x_print.c
 
+CMakeFiles/ptf.dir/src/ft_x_print.c.o: ../ft_printf.h
+CMakeFiles/ptf.dir/src/ft_x_print.c.o: ../libft.h
 CMakeFiles/ptf.dir/src/ft_x_print.c.o: ../src/ft_x_print.c
 

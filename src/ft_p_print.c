@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/17 22:43:49 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/18 15:28:45 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,14 @@ static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 
 	i = 0;
 	z_n = stuff->flag == zero ? '0' : ' ';
-	z_n = stuff->point != NULL ? ' ' : z_n;
-	ft_putstr_fd("0x", 1);
-	if (stuff->precision < 0 && stuff->flag == zero)
-		z_n = '0';
-	else
-		while (stuff->width-- > nl + d)
-			set_lenth_put_char(stuff, z_n, 1);
+	z_n = stuff->point != NULL ? '0' : z_n;
+	stuff->width -= 2;
+	if (z_n == '0')
+		ft_putstr_fd("0x", 1);
+	while (stuff->width-- > nl + d)
+		set_lenth_put_char(stuff, z_n, 1);
+	if (z_n != '0')
+		ft_putstr_fd("0x", 1);
 	while (i++ < d)
 		set_lenth_put_char(stuff, '0', 1);
 	if (stuff->precision < 0 && ft_strncmp(ns, "0", nl) == 0)
@@ -54,15 +55,15 @@ static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 	if (stuff->flag == minus || stuff->flag == (minus | zero))
 	{
 		ft_putstr_fd("0x", 1);
+		stuff->width -= 2;
 		while (i++ < d)
 			set_lenth_put_char(stuff, '0', 1);
 		i = 0;
-		if (ft_strncmp(ns, "0", nl) != 0 || stuff->point == NULL)
-			while (i < nl)
-			{
-				set_lenth_put_char(stuff, *(ns + i), 1);
-				i++;
-			}
+		while (i < nl)
+		{
+			set_lenth_put_char(stuff, *(ns + i), 1);
+			i++;
+		}
 		while (stuff->width-- > nl + d)
 			set_lenth_put_char(stuff, ' ', 1);
 	}
@@ -79,8 +80,8 @@ void				ft_p_print(t_specs *stuff)
 
 	nbr = (unsigned long)va_arg(stuff->f_varg, void *);
 	nbr_str = ft_itoa_base(nbr, 16, 0);
-	nbr_len = 2;
-	stuff->full_lenth += nbr_len;
+	nbr_len = 0;
+	stuff->full_lenth = stuff->full_lenth + nbr_len;
 	nbr_len += ft_strlen(nbr_str);
 	if (stuff->point != NULL && nbr == 0)
 		nbr_len--;

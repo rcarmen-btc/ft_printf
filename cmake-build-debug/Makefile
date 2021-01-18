@@ -359,6 +359,33 @@ libft/ft_strlen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
+libft/ft_strncmp.o: libft/ft_strncmp.c.o
+
+.PHONY : libft/ft_strncmp.o
+
+# target to build an object file
+libft/ft_strncmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strncmp.c.o
+.PHONY : libft/ft_strncmp.c.o
+
+libft/ft_strncmp.i: libft/ft_strncmp.c.i
+
+.PHONY : libft/ft_strncmp.i
+
+# target to preprocess a source file
+libft/ft_strncmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strncmp.c.i
+.PHONY : libft/ft_strncmp.c.i
+
+libft/ft_strncmp.s: libft/ft_strncmp.c.s
+
+.PHONY : libft/ft_strncmp.s
+
+# target to generate assembly for a file
+libft/ft_strncmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/libft/ft_strncmp.c.s
+.PHONY : libft/ft_strncmp.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -439,6 +466,33 @@ src/ft_di_print.s: src/ft_di_print.c.s
 src/ft_di_print.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_di_print.c.s
 .PHONY : src/ft_di_print.c.s
+
+src/ft_p_print.o: src/ft_p_print.c.o
+
+.PHONY : src/ft_p_print.o
+
+# target to build an object file
+src/ft_p_print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_p_print.c.o
+.PHONY : src/ft_p_print.c.o
+
+src/ft_p_print.i: src/ft_p_print.c.i
+
+.PHONY : src/ft_p_print.i
+
+# target to preprocess a source file
+src/ft_p_print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_p_print.c.i
+.PHONY : src/ft_p_print.c.i
+
+src/ft_p_print.s: src/ft_p_print.c.s
+
+.PHONY : src/ft_p_print.s
+
+# target to generate assembly for a file
+src/ft_p_print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ptf.dir/build.make CMakeFiles/ptf.dir/src/ft_p_print.c.s
+.PHONY : src/ft_p_print.c.s
 
 src/ft_perc_print.o: src/ft_perc_print.c.o
 
@@ -770,6 +824,9 @@ help:
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"
+	@echo "... libft/ft_strncmp.o"
+	@echo "... libft/ft_strncmp.i"
+	@echo "... libft/ft_strncmp.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -779,6 +836,9 @@ help:
 	@echo "... src/ft_di_print.o"
 	@echo "... src/ft_di_print.i"
 	@echo "... src/ft_di_print.s"
+	@echo "... src/ft_p_print.o"
+	@echo "... src/ft_p_print.i"
+	@echo "... src/ft_p_print.s"
 	@echo "... src/ft_perc_print.o"
 	@echo "... src/ft_perc_print.i"
 	@echo "... src/ft_perc_print.s"

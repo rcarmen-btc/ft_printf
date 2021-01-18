@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/17 19:56:58 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/18 15:15:22 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,7 @@ static int			type_detector(t_specs *stuff)
 		stuff->type = upper_hex;
 	else if (*(stuff->f_str) == '%')
 		stuff->type = percent;
-	if (*(stuff->f_str) == '%')
-		return (-1);
-	if (stuff->type != no_type)
+	if (stuff->type != no_type || stuff->type == percent)
 	{
 		stuff->f_str++;
 		return (0);

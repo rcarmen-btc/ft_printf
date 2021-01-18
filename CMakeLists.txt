@@ -17,8 +17,10 @@ add_executable(ptf
         src/ft_u_print.c
         src/ft_u_ptf_putnbr_fd.c
         src/ft_perc_print.c
+        src/ft_p_print.c
         main.c
         src/ft_specifier_parser.c
+        libft/ft_strncmp.c
         libft/ft_strchr.c
         libft/ft_isdigit.c
         src/ft_print_specifier.c

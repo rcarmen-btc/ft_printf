@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//#include "libft.h"
-#include "./includes/ft_printf.h"
+#include "libft.h"
+#include "ft_printf.h"
 
-char	*ft_itoa_base(int value, int base);
 //int main()
 //{
 //	char *tst = "%-0*.*i";
@@ -22,13 +21,13 @@ int main()
     //printf("1:%3s\n", "HelloWorld");
     //char *c = NULL;
     //write(1, c, 1);
-    int b;
-    b = 23;
-    int *p = &b;
     //ft_printf("Hello |%p|\n", p);
-    ft_printf("%p\n", NULL);
-    printf("%p\n", NULL);
-    //printf("Hello |%-4.3x|\n", 32);
+	//    ft_printf("%p\n", NULL);
+	unsigned long a = 232;
+	char *b = ft_itoa_base(a, 16, 0);
+	ft_printf("%-20.*p\n", -1,b);
+	printf("%-20.*p\n", -1,b);
+	//printf("Hello |%-4.3x|\n", 32);
     //	ft_itoa_base(-19, 3);
     //ft_printf("%s\n", ft_itoa_base(-23, 10));
     //printf("%d\n", i);
