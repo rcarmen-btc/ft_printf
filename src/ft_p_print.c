@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/18 15:28:45 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/21 00:40:47 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,7 @@ void				ft_p_print(t_specs *stuff)
 	char			*nbr_str;
 	int				diff;
 
+	nbr_str = NULL;
 	nbr = (unsigned long)va_arg(stuff->f_varg, void *);
 	nbr_str = ft_itoa_base(nbr, 16, 0);
 	nbr_len = 0;
