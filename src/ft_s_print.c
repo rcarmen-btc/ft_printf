@@ -33,16 +33,16 @@ static void			flag_influence(t_specs *stuff, int pl, int sl, char *s)
 			set_lenth_put_char(stuff, ' ', 1);
 	if (s != NULL || !IS_LINUX)
 	{
-		if (stuff->precision < 0)
-		{
-			stuff->full_lenth += NULL_SIZE;
-			ptf_putnstr_fd("(null)", NULL_SIZE, 1);
-		}
-		else
-		{
+//		if (stuff->precision < 0)
+//		{
+//			stuff->full_lenth += NULL_SIZE;
+//			ptf_putnstr_fd("(null)", NULL_SIZE, 1);
+//		}
+//		else
+//		{
 			stuff->full_lenth += pl;
 			ptf_putnstr_fd(s, pl, 1);
-		}
+//		}
 	}
 	if (stuff->flag == minus)
 		while (sl--)
@@ -94,14 +94,14 @@ void				ft_s_print(t_specs *stuff)
 	str_len = ft_strlen(str);
 	if (stuff->point != NULL)
 	{
-		if (stuff->precision > str_len)
-			prt_len = str_len;
-		else
+		if (stuff->precision < str_len && stuff->precision > 0)
 			prt_len = stuff->precision;
+		else
+			prt_len = str_len;
 	}
 	else
 		prt_len = str_len;
-	if ((spc_len = prt_len - stuff->width) < 0)
+	if ((spc_len = stuff->width - prt_len) < 0)
 		spc_len = 0;
 	flag_influence(stuff, prt_len, spc_len, str);
 }
