@@ -102,7 +102,7 @@ void				ft_s_print(t_specs *stuff)
 	str_len = ft_strlen(str);
 	if (stuff->point != NULL)
 	{
-		if (stuff->precision < str_len && stuff->precision > 0)
+		if (stuff->precision < str_len && stuff->precision >= 0)
 			prt_len = stuff->precision;
 		else
 			prt_len = str_len;
