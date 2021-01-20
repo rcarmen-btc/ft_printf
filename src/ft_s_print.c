@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/20 23:31:05 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/20 23:41:46 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void			flag_influence(t_specs *stuff, int pl, int sl, char *s)
 	if (stuff->flag != minus)
 		while (sl--)
 			set_lenth_put_char(stuff, ' ', 1);
-	if ((s != NULL || !IS_LINUX) && stuff->precision > 0)
+	if (s != NULL || !IS_LINUX)
 	{
 //		if (stuff->precision < 0)
 //		{
@@ -40,8 +40,11 @@ static void			flag_influence(t_specs *stuff, int pl, int sl, char *s)
 //		}
 //		else
 //		{
+		if (stuff->precision == 0 && stuff->point == NULL)
+		{
 			stuff->full_lenth += pl;
 			ptf_putnstr_fd(s, pl, 1);
+		}
 //		}
 	}
 	if (stuff->flag == minus)
