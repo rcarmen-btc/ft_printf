@@ -6,6 +6,7 @@
 
 int main()
 {
-    int a;
-	ft_printf("%16p\n", &a);
+
+	//ft_printf("%.*s\n", -3, &a);
+	ft_printf("%s\n", NULL);
 }

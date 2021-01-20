@@ -101,7 +101,7 @@ void				ft_s_print(t_specs *stuff)
 	}
 	else
 		prt_len = str_len;
-	if ((spc_len = stuff->width - prt_len) < 0)
+	if ((spc_len = prt_len - stuff->width) < 0)
 		spc_len = 0;
 	flag_influence(stuff, prt_len, spc_len, str);
 }
