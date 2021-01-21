@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/rcarmen/school42/ptf/. 
+C_INCLUDES = -I/home/rcarmen/school42/ft_printf/. 
 

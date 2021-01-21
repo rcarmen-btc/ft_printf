@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/21 02:41:46 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/21 03:04:33 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*res(int i, int n, int *convert, int up_low)
 		symbols = "0123456789abcdef";
 	else 
 		symbols = "0123456789ABCDEFG";
-	res = (char *)malloc(sizeof(res) * i);
+	res = (char *)malloc(sizeof(char) * i);
 	ft_bzero(res, i);
 	if (n == 1)
 		res[0] = '-';

@@ -1,4 +1,4 @@
-# Install script for directory: /home/rcarmen/school42/ptf
+# Install script for directory: /home/rcarmen/school42/ft_printf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rcarmen/school42/ptf/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rcarmen/school42/ft_printf/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
