@@ -6,7 +6,7 @@
 #    By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/03 16:32:18 by rcarmen           #+#    #+#              #
-#    Updated: 2021/01/14 18:15:45 by rcarmen          ###   ########.fr        #
+#    Updated: 2021/01/22 15:57:30 by rcarmen          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ $(NAME): $(OBJ) $(INCLUDE)
 	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
-	gcc $(FLAGS) -c $< -o $@
+	gcc $(FLAGS) -g -c $< -o $@
  
 so:
 	gcc -fPIC -c ${SRC_BONUS}

@@ -6,13 +6,13 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/21 03:04:33 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/22 20:47:17 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*res(int i, int n, int *convert, int up_low)
+static char		*get_res(int i, int n, int *convert, int up_low)
 {
 	char		*symbols;
 	char		*res;
@@ -21,7 +21,7 @@ char	*res(int i, int n, int *convert, int up_low)
 		symbols = "0123456789abcdef";
 	else 
 		symbols = "0123456789ABCDEFG";
-	res = (char *)malloc(sizeof(char) * i);
+	res = (char *)malloc(sizeof(char) * (i + 1));
 	ft_bzero(res, i);
 	if (n == 1)
 		res[0] = '-';
@@ -36,6 +36,7 @@ char	*ft_itoa_base(unsigned long value, int base, int up_low)
 	long int	val_tmp;
 	int			i;
 	int			n;
+	char		*res;
 	int			convert[64];
 
 	i = 0;
@@ -47,11 +48,17 @@ char	*ft_itoa_base(unsigned long value, int base, int up_low)
 		n = 1;
 	val_tmp *= val_tmp < 0 ? -1 : 1;
 	if (val_tmp == 0)
-		return ("0");
+	{
+		res = (char *)malloc(sizeof(char) * (i + 1));
+		ft_bzero(res, 1);
+		*res = '0';
+		*(res + 1) = '\0';
+		return (res);
+	}
 	while (val_tmp != 0)
 	{
 		convert[i++] = val_tmp % base;
 		val_tmp = val_tmp / base;
 	}
-	return (res(i, n, convert, up_low));
+	return (get_res(i, n, convert, up_low));
 }

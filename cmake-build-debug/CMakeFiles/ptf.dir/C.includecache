@@ -54,7 +54,7 @@ libft.h
 ft_printf.h
 /home/rcarmen/school42/ft_printf/ft_printf.h
 
-/home/rcarmen/school42/ft_printf/src/ft_x_print.c
+/home/rcarmen/school42/ft_printf/src/ft_p_print.c
 libft.h
 /home/rcarmen/school42/ft_printf/src/libft.h
 ft_printf.h

@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/22 00:00:13 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/22 15:51:13 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,4 +86,5 @@ void					ft_x_print(t_specs *stuff)
 		diff = stuff->precision - nbr_len;
 	diff = diff > 0 ? diff : 0;
 	mi_fl_influ(stuff, nbr_str, nbr_len, diff);
+	free(nbr_str);
 }

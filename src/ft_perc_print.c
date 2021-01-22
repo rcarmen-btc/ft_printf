@@ -6,12 +6,18 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/19 16:36:16 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/22 22:29:48 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "ft_printf.h"
+
+static void			set_lenth_put_char(t_specs *stuff, const char c, int fd)
+{
+	ft_putchar_fd(c, fd);
+	stuff->full_lenth++;
+}
 
 void		ft_perc_print(t_specs *stuff)
 {
@@ -24,15 +30,15 @@ void		ft_perc_print(t_specs *stuff)
 	z_s = ' ';
 	if (stuff->flag == minus || stuff->flag == (minus | zero))
 	{
-		ft_putchar_fd(perc, 1);
+		set_lenth_put_char(stuff, perc, 1);
 		while (i++ < stuff->width - 1)
-			ft_putchar_fd(z_s, 1);
+			set_lenth_put_char(stuff, z_s, 1);
 	}
 	else
 	{	
 		z_s = stuff->flag == zero ? '0' : ' ';
 		while (i++ < stuff->width - 1)
-			ft_putchar_fd(z_s, 1);
-		ft_putchar_fd(perc, 1);
+			set_lenth_put_char(stuff, z_s, 1);
+		set_lenth_put_char(stuff, perc, 1);
 	}
 }

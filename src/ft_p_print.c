@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/21 00:40:47 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/22 22:28:27 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,16 @@ static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 
 	i = 0;
 	z_n = stuff->flag == zero ? '0' : ' ';
-	z_n = stuff->point != NULL ? '0' : z_n;
-	stuff->width -= 2;
-	if (z_n == '0')
-		ft_putstr_fd("0x", 1);
-	while (stuff->width-- > nl + d)
-		set_lenth_put_char(stuff, z_n, 1);
+	z_n = stuff->point != NULL ? ' ' : z_n;
+	if (stuff->precision < 0 && stuff->flag == zero)
+		z_n = '0';
+	else
+	{
+		if (z_n == '0')
+			ft_putstr_fd("0x", 1);
+		while (stuff->width-- > nl + d + 2)
+			set_lenth_put_char(stuff, z_n, 1);
+	}
 	if (z_n != '0')
 		ft_putstr_fd("0x", 1);
 	while (i++ < d)
@@ -39,12 +43,11 @@ static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 	if (stuff->precision < 0 && ft_strncmp(ns, "0", nl) == 0)
 		ft_u_ptf_putnbr_fd(0, 1);
 	i = 0;
-	if (ft_strncmp(ns, "0", nl) != 0 || stuff->point == NULL)
-		while (i < nl)
-		{
-			set_lenth_put_char(stuff, *(ns + i), 1);
-			i++;
-		}
+	while (i < nl)
+	{
+		set_lenth_put_char(stuff, *(ns + i), 1);
+		i++;
+	}
 }
 
 static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
@@ -55,7 +58,6 @@ static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 	if (stuff->flag == minus || stuff->flag == (minus | zero))
 	{
 		ft_putstr_fd("0x", 1);
-		stuff->width -= 2;
 		while (i++ < d)
 			set_lenth_put_char(stuff, '0', 1);
 		i = 0;
@@ -82,14 +84,16 @@ void				ft_p_print(t_specs *stuff)
 	nbr = (unsigned long)va_arg(stuff->f_varg, void *);
 	nbr_str = ft_itoa_base(nbr, 16, 0);
 	nbr_len = 0;
-	stuff->full_lenth = stuff->full_lenth + nbr_len;
+	//stuff->width -= 2;
 	nbr_len += ft_strlen(nbr_str);
-	if (stuff->point != NULL && nbr == 0)
-		nbr_len--;
+//	if (stuff->point != NULL && nbr == 0)
+	stuff->full_lenth = 2;
 	if (stuff->precision < 0)
 		diff = 0;
 	else
 		diff = stuff->precision - nbr_len;
 	diff = diff > 0 ? diff : 0;
+	diff = nbr == 0 ? 0 : diff;
 	mi_fl_influ(stuff, nbr_str, nbr_len, diff);
+	free(nbr_str);
 }

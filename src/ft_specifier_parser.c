@@ -82,7 +82,7 @@ static int			type_detector(t_specs *stuff)
 		stuff->type = upper_hex;
 	else if (*(stuff->f_str) == '%')
 		stuff->type = percent;
-	if (stuff->type != no_type || stuff->type == percent)
+	if (stuff->type != no_type)
 	{
 		stuff->f_str++;
 		return (0);
@@ -97,8 +97,9 @@ void				ft_specifier_parser(t_specs *stuff)
 	stuff->f_str++;
 	stuff->point = ft_point_detector((char *)stuff->f_str);
 	stuff->precision = 0;
-	while (*(stuff->f_str) && (type_detector_return = type_detector(stuff)) &&
-		type_detector_return != -1)
+	stuff->width = 0;
+	stuff->flag = none;
+	while (*(stuff->f_str) && (type_detector_return = type_detector(stuff)))
 	{
 		flag_detector(stuff);
 		width_detector(stuff);
@@ -109,11 +110,6 @@ void				ft_specifier_parser(t_specs *stuff)
 	{
 		ft_putstr_fd("{***Error!***}", 1);
 		return ;
-	}
-	else if (type_detector_return == -1)
-	{
-		ft_putchar_fd('%', 1);
-		stuff->f_str++;
 	}
 	ft_print_specifier(stuff);
 }
