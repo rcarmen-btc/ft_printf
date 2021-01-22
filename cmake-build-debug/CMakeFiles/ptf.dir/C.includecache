@@ -24,7 +24,7 @@ stdlib.h
 stdio.h
 -
 
-/home/rcarmen/school42/ft_printf/ft_printf.h
+/Users/zair.nur/Desktop/ft_printf/ft_printf.h
 stdio.h
 -
 stdlib.h
@@ -34,7 +34,7 @@ stdarg.h
 unistd.h
 -
 
-/home/rcarmen/school42/ft_printf/libft.h
+/Users/zair.nur/Desktop/ft_printf/libft.h
 unistd.h
 -
 stdlib.h
@@ -42,7 +42,7 @@ stdlib.h
 stdio.h
 -
 
-/home/rcarmen/school42/ft_printf/main.c
+/Users/zair.nur/Desktop/ft_printf/main.c
 stdio.h
 -
 stdlib.h
@@ -50,13 +50,13 @@ stdlib.h
 string.h
 -
 libft.h
-/home/rcarmen/school42/ft_printf/libft.h
+/Users/zair.nur/Desktop/ft_printf/libft.h
 ft_printf.h
-/home/rcarmen/school42/ft_printf/ft_printf.h
+/Users/zair.nur/Desktop/ft_printf/ft_printf.h
 
-/home/rcarmen/school42/ft_printf/src/ft_p_print.c
+/Users/zair.nur/Desktop/ft_printf/src/ft_di_print.c
 libft.h
-/home/rcarmen/school42/ft_printf/src/libft.h
+/Users/zair.nur/Desktop/ft_printf/src/libft.h
 ft_printf.h
-/home/rcarmen/school42/ft_printf/src/ft_printf.h
+/Users/zair.nur/Desktop/ft_printf/src/ft_printf.h
 

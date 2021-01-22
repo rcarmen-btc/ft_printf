@@ -1,3 +1,3 @@
-/home/rcarmen/school42/ft_printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rcarmen/school42/ft_printf/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rcarmen/school42/ft_printf/cmake-build-debug/CMakeFiles/ptf.dir
+/Users/zair.nur/Desktop/ft_printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/zair.nur/Desktop/ft_printf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zair.nur/Desktop/ft_printf/cmake-build-debug/CMakeFiles/ptf.dir
