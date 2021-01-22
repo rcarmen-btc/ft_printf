@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../ft_printf.h
-stdio.h
--
-stdlib.h
--
-stdarg.h
--
-unistd.h
--
-
-../libft.h
-unistd.h
--
-stdlib.h
--
-stdio.h
--
-
 /Users/zair.nur/Desktop/ft_printf/ft_printf.h
 stdio.h
 -
@@ -53,10 +35,4 @@ libft.h
 /Users/zair.nur/Desktop/ft_printf/libft.h
 ft_printf.h
 /Users/zair.nur/Desktop/ft_printf/ft_printf.h
-
-/Users/zair.nur/Desktop/ft_printf/src/ft_di_print.c
-libft.h
-/Users/zair.nur/Desktop/ft_printf/src/libft.h
-ft_printf.h
-/Users/zair.nur/Desktop/ft_printf/src/ft_printf.h
 

@@ -78,7 +78,13 @@ void					ft_x_print(t_specs *stuff)
 	nbr = (unsigned int)(va_arg(stuff->f_varg, unsigned long long));
 	nbr_str = ft_itoa_base(nbr, 16, 0);
 	nbr_len = ft_strlen(nbr_str);
-	if (stuff->point != NULL && nbr == 0)
+    diff = 0;
+    if (stuff->precision < 0)
+    {
+        stuff->precision = 0;
+        stuff->point = NULL;
+    }
+    if (stuff->point != NULL && nbr == 0)
 		nbr_len--;
 	if (stuff->precision < 0)
 		diff = 0;

@@ -87,7 +87,7 @@ void				ft_p_print(t_specs *stuff)
 	//stuff->width -= 2;
 	nbr_len += ft_strlen(nbr_str);
 //	if (stuff->point != NULL && nbr == 0)
-	stuff->full_lenth = 2;
+	stuff->full_lenth += 2;
 	if (stuff->precision < 0)
 		diff = 0;
 	else
