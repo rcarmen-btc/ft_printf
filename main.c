@@ -4,8 +4,7 @@
 #include "libft.h"
 #include "ft_printf.h"
 
-int main()
-{
+int main() {
 //	int w = 5;
 //	int p = 0;
 //
@@ -17,29 +16,29 @@ int main()
 //	int u = d;
 //	int x = 23;
 //	int X = x;
-	int len;
+    int len;
 
-    int		a = 8;
-    int		b = 5;
-    char	c = 'a';
-    int		d = 2147483647;
-    int		e = -2147483648;
-    int		f = 42;
-    int		g = 25;
-    int		h = 4200;
-    int		i = 8;
-    int		j = -12;
-    int		k = 123456789;
-    int		l = 0;
-    int		m = -12345678;
-    char	*n = "abcdefghijklmnop";
-    char	*o = "-a";
-    char	*p = "-12";
-    char	*q = "0";
-    char	*r = "%%";
-    char	*s = "-2147483648";
-    char	*t = "0x12345678";
-    char	*u = "-0";
+    int a = 8;
+    int b = 5;
+    char c = 'a';
+    int d = 2147483647;
+    int e = -2147483648;
+    int f = 42;
+    int g = 25;
+    int h = 4200;
+    int i = 8;
+    int j = -12;
+    int k = 123456789;
+    int l = 0;
+    int m = -12345678;
+    char *n = "abcdefghijklmnop";
+    char *o = "-a";
+    char *p = "-12";
+    char *q = "0";
+    char *r = "%%";
+    char *s = "-2147483648";
+    char *t = "0x12345678";
+    char *u = "-0";
 
 //	len2 = ft_printf("%.i, %.d, %.d, %.d, %.d, %.d, %.d, %.d", 8, -12, 123456789, 0, -12345678, 97, -2147483648, 2147483647);
 //	printf("\n%d\n", len2);
@@ -70,9 +69,12 @@ int main()
 //len = ft_printf("%.*i, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d", a, i, a, j, a, k, a, l, a, m, a, c, a, e, a, d);
 //len = ft_printf("%*.*i, %*.*d, %*.*d, %*.*d, %*.*d, %*.*d, %*.*d, %*.*d", a, b, i, a, b, j, a, b, k, a, b, l, a, b, m, a, b, c, a, b, e, a, b, d);
 //len = ft_printf("%.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X", a, i, a, i, a, i, a, j, a, j, a, j, a, k, a, k, a, k, a, l, a, l, a, l, a, m, a, m, a, m, a, c, a, c, a, c, a, d, a, d, a, d, a, e, a, e, a, e);
-len = ft_printf("%-*p, %-*x, %-*p, %-*x, %-*p, %-*x, %-*p, %-*x", a, (void *)209590960, a, 209590960, a, (void *)207038912, a, 207038912, a, (void *)1, a, 1, a, NULL, a, 0);
-
+//    len = ft_printf(" %-*x, %-*p, %-*x, %-*p, %-*x", a, 207038912, a, (void *) 1, a, 1, a, NULL, a, 0);
+//len = ft_printf("%14p", &len);
+//len = ft_printf("%53c%0189.51d%-103.21d%*x%102c" ,-27,231647176,-1119242596,-94,(void*)17541392615378030860lu,80);
+//printf("\n%d\n", len);
+//len = printf("%53c%0189.51d%-103.21d%*x%102c" ,-27,231647176,-1119242596,-94,(void*)17541392615378030860lu,80);
+len = ft_printf("%.p", NULL);
 printf("\n%d\n", len);
+
 }
-//%d | %.-2d - all
-//%.d | %.d | %

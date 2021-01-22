@@ -66,7 +66,7 @@ static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 			set_lenth_put_char(stuff, *(ns + i), 1);
 			i++;
 		}
-		while (stuff->width-- > nl + d)
+		while (stuff->width-- > nl + d + 2)
 			set_lenth_put_char(stuff, ' ', 1);
 	}
 	else
@@ -84,10 +84,17 @@ void				ft_p_print(t_specs *stuff)
 	nbr = (unsigned long)va_arg(stuff->f_varg, void *);
 	nbr_str = ft_itoa_base(nbr, 16, 0);
 	nbr_len = 0;
-	//stuff->width -= 2;
 	nbr_len += ft_strlen(nbr_str);
-//	if (stuff->point != NULL && nbr == 0)
 	stuff->full_lenth += 2;
+    diff = 0;
+    if (stuff->point != NULL && nbr == 0) {
+        ft_strlcpy(nbr_str, "", 1);
+    }
+        if (stuff->precision < 0)
+    {
+        stuff->precision = 0;
+        stuff->point = NULL;
+    }
 	if (stuff->precision < 0)
 		diff = 0;
 	else
