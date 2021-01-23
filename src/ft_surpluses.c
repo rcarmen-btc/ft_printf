@@ -6,12 +6,18 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 17:25:33 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 17:31:32 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "ft_printf.h"
+
+static void			set_lenth_put_char(t_specs *stuff, const char c, int fd)
+{
+	ft_putchar_fd(c, fd);
+	stuff->full_lenth++;
+}
 
 void		ft_p_nu_ca(t_specs *stuff, int nl, int diff)
 {
