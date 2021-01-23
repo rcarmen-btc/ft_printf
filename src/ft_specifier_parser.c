@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 16:43:06 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 23:15:05 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,7 @@ void				ft_specifier_parser(t_specs *stuff)
 	stuff->precision = 0;
 	stuff->width = 0;
 	stuff->flag = none;
+	type_detector_return = 0;
 	while (*(stuff->f_str) && (type_detector_return = type_detector(stuff)))
 	{
 		flag_detector(stuff);
