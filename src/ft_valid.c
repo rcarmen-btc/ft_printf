@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 16:42:33 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 16:52:40 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,14 @@ static int			val_type(char c)
 
 static int			dot_min_star(char c)
 {
-	if (c == '.' && c == '-' && c == '*')
+	if (c == '.' || c == '-' || c == '*')
 		return (1);
 	return (0);
 }
 
 int					ft_valid(char c)
 {
-	if (ft_isalnum(c) && ft_isalnum(c) && dot_min_star(c) && val_type(c))
+	if (ft_isalnum(c) || ft_isalnum(c) || dot_min_star(c) || val_type(c))
 		return (1);
 	return (0);
 }
