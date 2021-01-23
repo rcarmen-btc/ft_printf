@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 23:52:45 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 01:00:54 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,9 @@ char	*ft_itoa_base(unsigned long value, int base, int up_low)
 	val_tmp *= val_tmp < 0 ? -1 : 1;
 	if (val_tmp == 0)
 	{
-		res = (char *)malloc(sizeof(char) * (i + 1));
+		res = (char *)malloc(sizeof(char) * (2));
 		*res = '0';
+		*(res + 1) = 0;
 		return (res);
 	}
 	while (val_tmp != 0)
