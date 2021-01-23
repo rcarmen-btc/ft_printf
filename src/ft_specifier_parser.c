@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 16:10:27 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 16:35:47 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,8 +105,8 @@ void				ft_specifier_parser(t_specs *stuff)
 		width_detector(stuff);
 		if (stuff->point != NULL)
 			precision_detector(stuff);
-		if (ft_valid(*(stuff->f_str)) == 0)
-			break ;
+		//if (ft_valid(*(stuff->f_str)) == 0)
+		//	break ;
 	}
 	if (*(stuff->f_str) == '\0' && type_detector_return != 0)
 	{
