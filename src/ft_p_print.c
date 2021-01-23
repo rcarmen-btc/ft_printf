@@ -60,7 +60,7 @@ static void         null_case(t_specs *stuff)
 
     i = 0;
     if (stuff->precision == 0 && stuff->point != NULL)
-       nl = 0;
+        nl = 0;
     else
         nl = 1;
     diff = stuff->precision - nl;
