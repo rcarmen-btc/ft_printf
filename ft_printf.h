@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/18 15:07:21 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 16:03:23 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ int					ft_print_specifier(t_specs *stuff);
 void				ft_specifier_parser(t_specs *stuff);
 void				ft_c_print(t_specs *stuff);
 void				ft_s_print(t_specs *stuff);
+int					ft_valid(char c);
 void				ft_x_print(t_specs *stuff);
 void				ft_u_print(t_specs *stuff);
 void				ft_p_print(t_specs *stuff);

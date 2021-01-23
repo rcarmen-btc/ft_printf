@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/22 22:28:27 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 16:31:25 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,48 +51,47 @@ static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 		}
 }
 
-static void         null_case(t_specs *stuff)
+static void			null_case(t_specs *stuff)
 {
-    char z_s;
-    int diff;
-    int i;
-    int nl;
+	char			z_s;
+	int				diff;
+	int				i;
+	int				nl;
 
-    i = 0;
-    if (stuff->precision == 0 && stuff->point != NULL)
-        nl = 0;
-    else
-        nl = 1;
-    diff = stuff->precision - nl;
-    diff = stuff->precision < 0 ? 0 : diff;
-    diff = diff < 0 ? 0 : diff;
-    if (stuff->flag == minus || stuff->flag == (minus | zero))
-    {
-        ft_putstr_fd("0x", 1);
-        while (i++ < diff)
-           set_lenth_put_char(stuff, '0', 1);
-        if (stuff->point == NULL || stuff->precision != 0)
-            set_lenth_put_char(stuff, '0', 1);
-        i = 0;
-        while (stuff->width-- > nl + diff + 2)
-           set_lenth_put_char(stuff, ' ', 1);
-    }
-    else
-    {
-        z_s = (stuff->flag & zero) == 1 ? '0': ' ';
-        if (z_s == '0')
-            ft_putstr_fd("0x", 1);
-        while (stuff->width-- > nl + diff + 2)
-            set_lenth_put_char(stuff, z_s, 1);
-        i = 0;
-        if (z_s == ' ')
-            ft_putstr_fd("0x", 1);
-        while (i++ < diff)
-            set_lenth_put_char(stuff, '0', 1);
-//        if (stuff->point != NULL && stuff->precision == 0)
-        if (stuff->point == NULL || stuff->precision != 0)
-            set_lenth_put_char(stuff, '0', 1);
-    }
+	i = 0;
+	if (stuff->precision == 0 && stuff->point != NULL)
+		nl = 0;
+	else
+		nl = 1;
+	diff = stuff->precision - nl;
+	diff = stuff->precision < 0 ? 0 : diff;
+	diff = diff < 0 ? 0 : diff;
+	if (stuff->flag == minus || stuff->flag == (minus | zero))
+	{
+		ft_putstr_fd("0x", 1);
+		while (i++ < diff)
+			set_lenth_put_char(stuff, '0', 1);
+		if (stuff->point == NULL || stuff->precision != 0)
+			set_lenth_put_char(stuff, '0', 1);
+		i = 0;
+		while (stuff->width-- > nl + diff + 2)
+			set_lenth_put_char(stuff, ' ', 1);
+	}
+	else
+	{
+		z_s = (stuff->flag & zero) == 1 ? '0' : ' ';
+		if (z_s == '0')
+			ft_putstr_fd("0x", 1);
+		while (stuff->width-- > nl + diff + 2)
+			set_lenth_put_char(stuff, z_s, 1);
+		i = 0;
+		if (z_s == ' ')
+			ft_putstr_fd("0x", 1);
+		while (i++ < diff)
+			set_lenth_put_char(stuff, '0', 1);
+		if (stuff->point == NULL || stuff->precision != 0)
+			set_lenth_put_char(stuff, '0', 1);
+	}
 }
 
 static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
@@ -131,21 +130,15 @@ void				ft_p_print(t_specs *stuff)
 	nbr_len = 0;
 	nbr_len += ft_strlen(nbr_str);
 	stuff->full_lenth += 2;
-    diff = 0;
-    if (nbr == 0)
-    {
-        null_case(stuff);
-        return ;
-    }
-    if (stuff->precision < 0)
-    {
-        stuff->precision = 0;
-        stuff->point = NULL;
-    }
-	if (stuff->precision < 0)
-		diff = 0;
-	else
-		diff = stuff->precision - nbr_len;
+	diff = 0;
+	if (nbr == 0)
+	{
+		null_case(stuff);
+		return ;
+	}
+	stuff->precision = stuff->precision < 0 ? 0 : stuff->precision;
+	stuff->point = stuff->precision < 0 ? NULL : stuff->point;
+	diff = stuff->precision < 0 ? 0 : stuff->precision - nbr_len;
 	diff = diff > 0 ? diff : 0;
 	diff = nbr == 0 ? 0 : diff;
 	mi_fl_influ(stuff, nbr_str, nbr_len, diff);

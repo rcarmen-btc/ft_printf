@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/21 00:25:56 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 16:16:06 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,22 +28,15 @@ static void			ptf_putnstr_fd(char *s, int n, int fd)
 
 static void			flag_influence(t_specs *stuff, int pl, int sl, char *s)
 {
-    char z_s;
+	char z_s;
 
-	stuff->flag = stuff->flag == (minus | zero) ? minus : stuff->flag; // xpxpxppxpxpxpx
-    z_s = (stuff->flag & zero) == 1 ? '0' : ' ';
+	stuff->flag = stuff->flag == (minus | zero) ? minus : stuff->flag;
+	z_s = (stuff->flag & zero) == 1 ? '0' : ' ';
 	if (stuff->flag != minus)
 		while (sl--)
 			set_lenth_put_char(stuff, z_s, 1);
 	if (s != NULL || !IS_LINUX)
 	{
-//		if (stuff->precision < 0)
-//		{
-//			stuff->full_lenth += NULL_SIZE;
-//			ptf_putnstr_fd("(null)", NULL_SIZE, 1);
-//		}
-//		else
-//		{
 		if (stuff->precision == 0 && stuff->point == NULL)
 		{
 			stuff->full_lenth += pl;
@@ -54,7 +47,6 @@ static void			flag_influence(t_specs *stuff, int pl, int sl, char *s)
 			stuff->full_lenth += pl;
 			ptf_putnstr_fd(s, pl, 1);
 		}
-//		}
 	}
 	if (stuff->flag == minus)
 		while (sl--)

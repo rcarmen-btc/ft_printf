@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/16 21:02:32 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 16:14:58 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,16 +94,16 @@ void				ft_di_print(t_specs *stuff)
 
 	nbr = va_arg(stuff->f_varg, int);
 	nbr_len = get_nbr_len(nbr);
-    diff = 0;
-    if (stuff->precision < 0)
-    {
-        stuff->precision = 0;
-        stuff->point = NULL;
-    }
+	diff = 0;
+	if (stuff->precision < 0)
+	{
+		stuff->precision = 0;
+		stuff->point = NULL;
+	}
 	if (stuff->point != NULL && nbr == 0)
-        nbr_len--;
-    if (stuff->precision < 0)
-        diff = 0;
+		nbr_len--;
+	if (stuff->precision < 0)
+		diff = 0;
 	else
 		diff = stuff->precision - nbr_len;
 	diff = diff > 0 ? diff : 0;
