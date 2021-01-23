@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 16:56:56 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 17:05:15 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int			dot_min_star(char c)
 
 int					ft_valid(char c)
 {
-	if (ft_isalnum(c) || ft_isalpha(c) || dot_min_star(c) || val_type(c))
+	if (dot_min_star(c) || val_type(c))
 		return (1);
 	return (0);
 }
