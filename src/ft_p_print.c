@@ -40,14 +40,50 @@ static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 		ft_putstr_fd("0x", 1);
 	while (i++ < d)
 		set_lenth_put_char(stuff, '0', 1);
-	if (stuff->precision < 0 && ft_strncmp(ns, "0", nl) == 0)
-		ft_u_ptf_putnbr_fd(0, 1);
 	i = 0;
-	while (i < nl)
-	{
-		set_lenth_put_char(stuff, *(ns + i), 1);
-		i++;
-	}
+	if (stuff->precision != 0 && ft_strncmp(ns, "0", nl) == 0)
+		ft_u_ptf_putnbr_fd(0, 1);
+	else
+		while (i < nl)
+		{
+			set_lenth_put_char(stuff, *(ns + i), 1);
+			i++;
+		}
+}
+
+static void         null_case(t_specs *stuff)
+{
+    char z_s;
+    int diff;
+    int i;
+
+    i = 0;
+    diff = stuff->precision - 1;
+    diff = stuff->precision < 0 ? 0 : diff;
+    diff = diff < 0 ? 0 : diff;
+    if (stuff->flag == minus || stuff->flag == (minus | zero))
+    {
+       while (i++ < diff)
+           set_lenth_put_char(stuff, '0', 1);
+       set_lenth_put_char(stuff, '0', 1);
+       i = 0;
+       while (i++ < stuff->width - diff)
+           set_lenth_put_char(stuff, ' ', 1);
+    }
+    else
+    {
+        z_s = (stuff->flag & zero) == 1 ? '0': ' ';
+        if (z_s == '0')
+            ft_putstr_fd("0x", 1);
+        while (i++ < stuff->width - diff)
+            set_lenth_put_char(stuff, z_s, 1);
+        i = 0;
+        if (z_s == ' ')
+            ft_putstr_fd("0x", 1);
+        while (i++ < diff)
+            set_lenth_put_char(stuff, z_s, 1);
+        set_lenth_put_char(stuff, '0', 1);
+    }
 }
 
 static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
@@ -87,10 +123,12 @@ void				ft_p_print(t_specs *stuff)
 	nbr_len += ft_strlen(nbr_str);
 	stuff->full_lenth += 2;
     diff = 0;
-    if (stuff->point != NULL && nbr == 0) {
-        ft_strlcpy(nbr_str, "", 1);
+    if (nbr == 0)
+    {
+        null_case(stuff);
+        return ;
     }
-        if (stuff->precision < 0)
+    if (stuff->precision < 0)
     {
         stuff->precision = 0;
         stuff->point = NULL;

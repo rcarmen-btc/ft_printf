@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/zair.nur/Desktop/ft_printf/. 
+C_INCLUDES = -I/Users/zair.nur/ft_printf/. 
 
