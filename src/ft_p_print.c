@@ -56,18 +56,25 @@ static void         null_case(t_specs *stuff)
     char z_s;
     int diff;
     int i;
+    int nl;
 
     i = 0;
-    diff = stuff->precision - 1;
+    if (stuff->precision == 0 && stuff->point != NULL)
+       nl = 0;
+    else
+        nl = 1;
+    diff = stuff->precision - nl;
     diff = stuff->precision < 0 ? 0 : diff;
     diff = diff < 0 ? 0 : diff;
     if (stuff->flag == minus || stuff->flag == (minus | zero))
     {
-       while (i++ < diff)
+        ft_putstr_fd("0x", 1);
+        while (i++ < diff)
            set_lenth_put_char(stuff, '0', 1);
-       set_lenth_put_char(stuff, '0', 1);
-       i = 0;
-       while (i++ < stuff->width - diff)
+        if (stuff->point == NULL || stuff->precision != 0)
+            set_lenth_put_char(stuff, '0', 1);
+        i = 0;
+        while (stuff->width-- > nl + diff + 2)
            set_lenth_put_char(stuff, ' ', 1);
     }
     else
@@ -75,14 +82,16 @@ static void         null_case(t_specs *stuff)
         z_s = (stuff->flag & zero) == 1 ? '0': ' ';
         if (z_s == '0')
             ft_putstr_fd("0x", 1);
-        while (i++ < stuff->width - diff)
+        while (stuff->width-- > nl + diff + 2)
             set_lenth_put_char(stuff, z_s, 1);
         i = 0;
         if (z_s == ' ')
             ft_putstr_fd("0x", 1);
         while (i++ < diff)
-            set_lenth_put_char(stuff, z_s, 1);
-        set_lenth_put_char(stuff, '0', 1);
+            set_lenth_put_char(stuff, '0', 1);
+//        if (stuff->point != NULL && stuff->precision == 0)
+        if (stuff->point == NULL || stuff->precision != 0)
+            set_lenth_put_char(stuff, '0', 1);
     }
 }
 
