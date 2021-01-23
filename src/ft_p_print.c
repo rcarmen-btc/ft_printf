@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 17:41:44 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 22:59:18 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,6 +115,7 @@ void				ft_p_print(t_specs *stuff)
 	if (nbr == 0)
 	{
 		null_case(stuff);
+		free(nbr_str);
 		return ;
 	}
 	stuff->precision = stuff->precision < 0 ? 0 : stuff->precision;
