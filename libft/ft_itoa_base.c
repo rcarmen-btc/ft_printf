@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 01:00:54 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 01:08:27 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static char		*get_res(int i, int n, int *convert, int up_low)
 {
 	char		*symbols;
 	char		*res;
-	
+
 	if (up_low == 0)
 		symbols = "0123456789abcdef";
 	else 
@@ -31,7 +31,15 @@ static char		*get_res(int i, int n, int *convert, int up_low)
 	return (res);
 }
 
-char	*ft_itoa_base(unsigned long value, int base, int up_low)
+static char 	*zero(char *res)
+{
+	res = (char *)malloc(sizeof(char) * (2));
+	*res = '0';
+	*(res + 1) = 0;
+	return (res);
+}
+
+char		*ft_itoa_base(unsigned long value, int base, int up_low)
 {
 	long int	val_tmp;
 	int			i;
@@ -47,12 +55,14 @@ char	*ft_itoa_base(unsigned long value, int base, int up_low)
 	if (val_tmp < 0 && base == 10)
 		n = 1;
 	val_tmp *= val_tmp < 0 ? -1 : 1;
+
 	if (val_tmp == 0)
 	{
-		res = (char *)malloc(sizeof(char) * (2));
-		*res = '0';
-		*(res + 1) = 0;
-		return (res);
+		return (zero(res));
+		//res = (char *)malloc(sizeof(char) * (2));
+		//*res = '0';
+		//*(res + 1) = 0;
+		//return (res);
 	}
 	while (val_tmp != 0)
 	{
