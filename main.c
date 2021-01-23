@@ -74,7 +74,7 @@ int main() {
 //len = ft_printf("%53c%0189.51d%-103.21d%*x%102c" ,-27,231647176,-1119242596,-94,(void*)17541392615378030860lu,80);
 //printf("\n%d\n", len);
 //len = printf("%53c%0189.51d%-103.21d%*x%102c" ,-27,231647176,-1119242596,-94,(void*)17541392615378030860lu,80);
-len = ft_printf("%.p", NULL);
+len = ft_printf("%-09s", "hello");
 printf("\n%d\n", len);
 
 }

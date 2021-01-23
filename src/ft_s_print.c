@@ -28,6 +28,7 @@ static void			ptf_putnstr_fd(char *s, int n, int fd)
 
 static void			flag_influence(t_specs *stuff, int pl, int sl, char *s)
 {
+	stuff->flag = stuff->flag == (minus | zero) ? minus : stuff->flag; // xpxpxppxpxpxpx
 	if (stuff->flag != minus)
 		while (sl--)
 			set_lenth_put_char(stuff, ' ', 1);
