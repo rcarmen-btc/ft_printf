@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 17:27:14 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 17:42:01 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ void				ft_u_print(t_specs *stuff);
 void				ft_p_print(t_specs *stuff);
 void				ft_upper_x_print(t_specs *stuff);
 void				ft_p_nu_ca(t_specs *stuff, int nl, int diff);
+void				ft_p_nu(t_specs *stuff, char *ns, int nl);
 char				*ft_point_detector(char *s);
 
 #endif
