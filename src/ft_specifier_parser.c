@@ -99,12 +99,14 @@ void				ft_specifier_parser(t_specs *stuff)
 	stuff->precision = 0;
 	stuff->width = 0;
 	stuff->flag = none;
+	// type_detector_return = type_detector(stuff);
 	while (*(stuff->f_str) && (type_detector_return = type_detector(stuff)))
 	{
 		flag_detector(stuff);
 		width_detector(stuff);
 		if (stuff->point != NULL)
 			precision_detector(stuff);
+		if ()
 	}
 	if (*(stuff->f_str) == '\0' && type_detector_return != 0)
 	{
