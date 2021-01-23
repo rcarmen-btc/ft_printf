@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 16:31:25 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/23 17:29:30 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 
 static void			null_case(t_specs *stuff)
 {
-	char			z_s;
 	int				diff;
 	int				i;
 	int				nl;
@@ -79,18 +78,19 @@ static void			null_case(t_specs *stuff)
 	}
 	else
 	{
-		z_s = (stuff->flag & zero) == 1 ? '0' : ' ';
-		if (z_s == '0')
-			ft_putstr_fd("0x", 1);
-		while (stuff->width-- > nl + diff + 2)
-			set_lenth_put_char(stuff, z_s, 1);
-		i = 0;
-		if (z_s == ' ')
-			ft_putstr_fd("0x", 1);
-		while (i++ < diff)
-			set_lenth_put_char(stuff, '0', 1);
-		if (stuff->point == NULL || stuff->precision != 0)
-			set_lenth_put_char(stuff, '0', 1);
+		ft_p_nu_ca(stuff, nl, diff);
+		//z_s = (stuff->flag & zero) == 1 ? '0' : ' ';
+		//if (z_s == '0')
+		//	ft_putstr_fd("0x", 1);
+		//while (stuff->width-- > nl + diff + 2)
+		//	set_lenth_put_char(stuff, z_s, 1);
+		//i = 0;
+		//if (z_s == ' ')
+		//	ft_putstr_fd("0x", 1);
+		//while (i++ < diff)
+		//	set_lenth_put_char(stuff, '0', 1);
+		//if (stuff->point == NULL || stuff->precision != 0)
+		//t	set_lenth_put_char(stuff, '0', 1);
 	}
 }
 

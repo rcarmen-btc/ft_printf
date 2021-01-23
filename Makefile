@@ -27,6 +27,7 @@ SRC = $(SRC_FILE)ft_printf.c\
 	$(SRC_FILE)ft_perc_print.c\
 	$(SRC_FILE)ft_u_ptf_putnbr_fd.c\
 	$(SRC_FILE)ft_valid.c\
+	$(SRC_FILE)ft_surpluses.c\
 
 OBJ = $(OBJ_FILE)ft_printf.o\
 	$(OBJ_FILE)ft_specifier_parser.o\
@@ -43,6 +44,7 @@ OBJ = $(OBJ_FILE)ft_printf.o\
 	$(OBJ_FILE)ft_perc_print.o\
 	$(OBJ_FILE)ft_u_ptf_putnbr_fd.o\
 	$(OBJ_FILE)ft_valid.o\
+	$(OBJ_FILE)ft_surpluses.o\
 
 all: $(NAME)
 
