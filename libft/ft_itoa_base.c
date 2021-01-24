@@ -6,16 +6,16 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 11:50:28 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 12:02:16 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char					*get_res(int i, int n, int *convert, int up_low)
+static char		*get_res(int i, int n, int *convert, int up_low)
 {
-	char					*symbols;
-	char					*res;
+	char				*symbols;
+	char				*res;
 
 	if (up_low == 0)
 		symbols = "0123456789abcdef";
@@ -31,7 +31,7 @@ static char					*get_res(int i, int n, int *convert, int up_low)
 	return (res);
 }
 
-static char					*zero(char *res)
+static char		*zero(char *res)
 {
 	res = (char *)malloc(sizeof(char) * (2));
 	*res = '0';
@@ -39,13 +39,13 @@ static char					*zero(char *res)
 	return (res);
 }
 
-char						*ft_itoa_base(unsigned long long value, int base, int up_low)
+char			*ft_itoa_base(unsigned long long value, int base, int up_low)
 {
-	unsigned long long		val_tmp;
-	int						i;
-	int						n;
-	char					*res;
-	int						convert[64];
+	unsigned long long	val_tmp;
+	int					i;
+	int					n;
+	char				*res;
+	int					convert[64];
 
 	i = 0;
 	res = 0;
@@ -53,9 +53,9 @@ char						*ft_itoa_base(unsigned long long value, int base, int up_low)
 	if (base < 2 || base > 16)
 		return ((char *)0);
 	val_tmp = value;
-	if (val_tmp < 0 && base == 10)
-		n = 1;
-	val_tmp *= val_tmp < 0 ? -1 : 1;
+	//if (val_tmp < 0 && base == 10)
+		//n = 1;
+	//val_tmp *= val_tmp < 0 ? -1 : 1;
 	if (val_tmp == 0)
 		return (zero(res));
 	while (val_tmp != 0)

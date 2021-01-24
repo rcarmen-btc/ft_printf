@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 16:32:04 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 11:41:28 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 12:02:55 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,8 @@ void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_putchar_fd(char c, int fd);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char				*ft_itoa_base(unsigned long long value, int base, int up_low);
+char				*ft_itoa_base(unsigned long long value,
+int base, int up_low);
 char				*ft_itoa(int n);
 char				*ft_strchr(const void *s, int c);
 char				*ft_strdup(const char *str);

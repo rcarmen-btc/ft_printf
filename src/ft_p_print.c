@@ -6,23 +6,23 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 11:40:57 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 11:53:18 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "ft_printf.h"
 
-static void			set_lenth_put_char(t_specs *stuff, const char c, int fd)
+static void				set_lenth_put_char(t_specs *stuff, const char c, int fd)
 {
 	ft_putchar_fd(c, fd);
 	stuff->full_lenth++;
 }
 
-static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
+static void				ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 {
-	int				i;
-	char			z_n;
+	int					i;
+	char				z_n;
 
 	i = 0;
 	z_n = stuff->flag == zero ? '0' : ' ';
@@ -46,11 +46,11 @@ static void			ot_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 		ft_p_nu(stuff, ns, nl);
 }
 
-static void			null_case(t_specs *stuff)
+static void				null_case(t_specs *stuff)
 {
-	int				diff;
-	int				i;
-	int				nl;
+	int					diff;
+	int					i;
+	int					nl;
 
 	i = 0;
 	if (stuff->precision == 0 && stuff->point != NULL)
@@ -75,9 +75,9 @@ static void			null_case(t_specs *stuff)
 		ft_p_nu_ca(stuff, nl, diff);
 }
 
-static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
+static void				mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 {
-	int				i;
+	int					i;
 
 	i = 0;
 	if (stuff->flag == minus || stuff->flag == (minus | zero))
