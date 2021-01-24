@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 01:08:27 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 10:17:42 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static char		*get_res(int i, int n, int *convert, int up_low)
 
 	if (up_low == 0)
 		symbols = "0123456789abcdef";
-	else 
+	else
 		symbols = "0123456789ABCDEFG";
 	res = (char *)malloc(sizeof(char) * (i + 1));
 	ft_bzero(res, i);
@@ -31,7 +31,7 @@ static char		*get_res(int i, int n, int *convert, int up_low)
 	return (res);
 }
 
-static char 	*zero(char *res)
+static char		*zero(char *res)
 {
 	res = (char *)malloc(sizeof(char) * (2));
 	*res = '0';
@@ -39,7 +39,7 @@ static char 	*zero(char *res)
 	return (res);
 }
 
-char		*ft_itoa_base(unsigned long value, int base, int up_low)
+char			*ft_itoa_base(unsigned long value, int base, int up_low)
 {
 	long int	val_tmp;
 	int			i;
@@ -49,21 +49,14 @@ char		*ft_itoa_base(unsigned long value, int base, int up_low)
 
 	i = 0;
 	n = 0;
-	if (base < 2 ||  base > 16)
+	if (base < 2 || base > 16)
 		return ((char *)0);
 	val_tmp = value;
 	if (val_tmp < 0 && base == 10)
 		n = 1;
 	val_tmp *= val_tmp < 0 ? -1 : 1;
-
 	if (val_tmp == 0)
-	{
 		return (zero(res));
-		//res = (char *)malloc(sizeof(char) * (2));
-		//*res = '0';
-		//*(res + 1) = 0;
-		//return (res);
-	}
 	while (val_tmp != 0)
 	{
 		convert[i++] = val_tmp % base;
