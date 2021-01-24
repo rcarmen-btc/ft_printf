@@ -48,6 +48,7 @@ char			*ft_itoa_base(unsigned long value, int base, int up_low)
 	int			convert[64];
 
 	i = 0;
+	res = 0;
 	n = 0;
 	if (base < 2 || base > 16)
 		return ((char *)0);
