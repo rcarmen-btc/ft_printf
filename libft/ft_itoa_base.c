@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 10:17:42 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 11:40:11 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static char		*zero(char *res)
 	return (res);
 }
 
-char			*ft_itoa_base(unsigned long value, int base, int up_low)
+char			*ft_itoa_base(unsigned long long value, int base, int up_low)
 {
 	long int	val_tmp;
 	int			i;

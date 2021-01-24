@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:48:53 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/23 22:59:18 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 11:40:57 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,15 +98,15 @@ static void			mi_fl_influ(t_specs *stuff, char *ns, int nl, int d)
 		ot_fl_influ(stuff, ns, nl, d);
 }
 
-void				ft_p_print(t_specs *stuff)
+void					ft_p_print(t_specs *stuff)
 {
-	int				nbr_len;
-	unsigned long	nbr;
-	char			*nbr_str;
-	int				diff;
+	int					nbr_len;
+	unsigned long long	nbr;
+	char				*nbr_str;
+	int					diff;
 
 	nbr_str = NULL;
-	nbr = (unsigned long)va_arg(stuff->f_varg, void *);
+	nbr = (unsigned long long)va_arg(stuff->f_varg, void *);
 	nbr_str = ft_itoa_base(nbr, 16, 0);
 	nbr_len = 0;
 	nbr_len += ft_strlen(nbr_str);
