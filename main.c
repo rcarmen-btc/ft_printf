@@ -65,19 +65,14 @@ int main() {
 	//len2 = ft_printf("%0*p", w, p, NULL);
     //printf("\n%d\n", len2);
 	//len2 = ft_printf("%*.*p", w, p, &w);
+	#define LONG_MAX 9223372036854775807L
+	#define LONG_MIN -9223372036854775808L
 	//printf("\n%d\n", len2);
-len = ft_printf("%.*i, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d, %.*d", a, i, a, j, a, k, a, l, a, m, a, c, a, e, a, d);
-len = ft_printf("%*.*i, %*.*d, %*.*d, %*.*d, %*.*d, %*.*d, %*.*d, %*.*d", a, b, i, a, b, j, a, b, k, a, b, l, a, b, m, a, b, c, a, b, e, a, b, d);
-len = ft_printf("%.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X", a, i, a, i, a, i, a, j, a, j, a, j, a, k, a, k, a, k, a, l, a, l, a, l, a, m, a, m, a, m, a, c, a, c, a, c, a, d, a, d, a, d, a, e, a, e, a, e);
-    len = ft_printf(" %-*x, %-*p, %-*x, %-*p, %-*x", a, 207038912, a, (void *) 1, a, 1, a, NULL, a, 0);
-len = ft_printf("%.", "kill me");
-len = ft_printf("%53c%0189.51d%-103.21d%*x%102c" ,-27,231647176,-1119242596,-94,(void*)17541392615378030860lu,80);
-printf("\n%d\n", len);
-len = printf("%53c%0189.51d%-103.21d%*x%102c" ,-27,231647176,-1119242596,-94,(void*)17541392615378030860lu,80);
- len = printf("%1$s", NULL);
- printf("\n%d\n", len);
- len = ft_printf("%1$s", NULL);
- printf("\n%d\n", len);
+	//printf(" %10p %-10p ", 0, 0);
+	//printf(" %p %p ", LONG_MIN, LONG_MAX);
+	ft_printf("%%*.c%c%%*.s*%ps%%*.X", '0', NULL);
+	//len =  printf(" .-0*%*p hel. ", 11, 101, 11, 42);
+
 // p - 0x0
 // .p -  0x
 // .0p - 0x

@@ -48,11 +48,11 @@ OBJ = $(OBJ_FILE)ft_printf.o\
 
 all: $(NAME)
 
-$(NAME): $(SRC) $(INCLUDE)
+$(NAME): $(SRC) $(PRINTF_INCLUDES)/ft_printf.h
 	$(MAKE) -C ./libft re
 	mv ./libft/libft.a .
 	mv libft.a libftprintf.a
-	$(CC) $(FLAGS) $(SRC) -g -I$(PRINTF_INCLUDES) -I$(LIBFT_INCLUDES)
+	$(CC) $(FLAGS) $(SRC) -I$(PRINTF_INCLUDES) -I$(LIBFT_INCLUDES)
 	ar rcs $(NAME) $(OBJ)
 
 clean:
