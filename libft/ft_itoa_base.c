@@ -6,16 +6,16 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 11:40:11 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 11:50:28 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		*get_res(int i, int n, int *convert, int up_low)
+static char					*get_res(int i, int n, int *convert, int up_low)
 {
-	char		*symbols;
-	char		*res;
+	char					*symbols;
+	char					*res;
 
 	if (up_low == 0)
 		symbols = "0123456789abcdef";
@@ -31,7 +31,7 @@ static char		*get_res(int i, int n, int *convert, int up_low)
 	return (res);
 }
 
-static char		*zero(char *res)
+static char					*zero(char *res)
 {
 	res = (char *)malloc(sizeof(char) * (2));
 	*res = '0';
@@ -39,13 +39,13 @@ static char		*zero(char *res)
 	return (res);
 }
 
-char			*ft_itoa_base(unsigned long long value, int base, int up_low)
+char						*ft_itoa_base(unsigned long long value, int base, int up_low)
 {
-	long int	val_tmp;
-	int			i;
-	int			n;
-	char		*res;
-	int			convert[64];
+	unsigned long long		val_tmp;
+	int						i;
+	int						n;
+	char					*res;
+	int						convert[64];
 
 	i = 0;
 	res = 0;
