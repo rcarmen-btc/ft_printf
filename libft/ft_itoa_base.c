@@ -6,7 +6,7 @@
 /*   By: rcarmen <rcarmen@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:58:26 by rcarmen           #+#    #+#             */
-/*   Updated: 2021/01/24 12:02:16 by rcarmen          ###   ########.fr       */
+/*   Updated: 2021/01/24 16:06:55 by rcarmen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,6 @@ char			*ft_itoa_base(unsigned long long value, int base, int up_low)
 	if (base < 2 || base > 16)
 		return ((char *)0);
 	val_tmp = value;
-	//if (val_tmp < 0 && base == 10)
-		//n = 1;
-	//val_tmp *= val_tmp < 0 ? -1 : 1;
 	if (val_tmp == 0)
 		return (zero(res));
 	while (val_tmp != 0)
